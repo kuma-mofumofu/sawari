@@ -1,0 +1,115 @@
+@import "../global/variables";
+.coder1{
+
+    #page-living{
+        .businesses-images{
+            margin-bottom: 48px;
+        }
+
+        #q-and-a{
+            margin: 0 auto;
+            max-width: 900px;
+            h4{
+                color: $tag-font;
+                font-size: 36px;
+            }
+            p{
+                text-align: center;
+                margin-bottom: 48px;
+                line-height: 32px;
+            }
+            .q-and-a{
+                max-width: 900px;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                width: calc(100% - 24px);
+                h5{
+                    background-color: $tag-font;
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 10px;
+                    line-height: 24px;
+                    font-weight: normal;
+                    margin-bottom: 48px;
+                }
+                dl{
+                    width: calc(100% - 328px);
+                    margin: 0 auto;
+                    div{
+                        margin-bottom: 48px;
+                        dt{
+                            color:$tag-font;
+                            font-size: 20px;
+                            margin-bottom: 24px;
+                            position: relative;
+                            line-height: 32px;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                top: 0;
+                                left: -164px;
+                            }
+                            br{
+                                display: none;
+                            }
+                        }
+                        dd{
+                            padding: 16px;
+                            width: calc(100% - 32px);
+                            background: $tag-bg;
+                            border-radius: 24px;
+                            min-height: 140px;
+                            line-height: 24px;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                bottom: 0;
+                                right: -164px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:660px){
+            #q-and-a{
+                p{
+                    text-align: left;
+                    padding: 0 12px;
+                    width: calc(100% - 24px);
+                }
+                .q-and-a{
+                    dl{
+                        width: 100%;
+                        div{
+                            display: flex;
+                            flex-wrap: wrap;
+                            dt{
+                                width: calc(100% - 105px);
+                                margin-left: auto;
+                                min-height: 80px;
+                                font-size: 20px;
+                                line-height: 30px;
+                                img{
+                                    width: 100px;
+                                    left: - 105px;
+                                }
+                                br{
+                                    display: block;
+                                }
+                            }
+                            dd{
+                                width: calc(100% - 105px - 32px);
+                                img{
+                                    width: 100px;
+                                    right: -105px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

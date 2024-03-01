@@ -1,0 +1,125 @@
+@import "../global/variables";
+
+.coder1{
+
+    #page-support{
+      line-height: 32px;
+      .wrapper{
+
+        #support-top{
+          padding: 0 12px;
+          .support-tags{
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            .tag{
+              width: calc(50% - 40px);
+              height: 130px;
+              background: #fff;
+              border: 1px solid $tag-font;
+              border-radius: 24px;
+              box-sizing: border-box;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              span{
+                font-size: 20px;
+              }
+              img{
+                width: 56px;
+              }
+
+              &:hover{
+                border-width: 3px;
+              }
+            }
+          }
+        }
+        #support-about,
+        #kimono-about{
+          padding: 0 12px;
+          padding-top: 135px;
+          h3{
+            font-size: 28px;
+            color: $tag-font;
+            margin-bottom: 36px;
+          }
+          & > p{
+            margin-bottom: 48px;
+          }
+        }
+        #support-about{
+          dl{
+            dt{
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              span{
+                display: block;
+                background: $tag-font;
+                width: 16px;
+                height: 16px;
+              }
+            }
+            dd{
+              text-indent: 1em;
+              margin-bottom: 36px;
+              ul{
+                text-indent: 2em;
+                position: relative;
+                &::before{
+                  position: absolute;
+                  content: "※";
+                  top: 0;
+                  left: -16px;
+                }
+              }
+            }
+          }
+        }
+        #kimono-about{
+          margin-bottom: 100px;
+          .suspended,
+          .accepting{
+            text-align: center;
+            img{
+              margin-bottom: 48px;
+            }
+            p{
+              text-align: left;
+            }
+          }
+          .accepting{
+            display: none;
+          }
+          .suspended{
+            display: block;
+          }
+        }
+      }
+      @media(max-width:800px){
+        .wrapper{
+          #support-about,
+          #kimono-about{
+            padding-top: 100px;
+          }
+        }
+      }
+      @media(max-width:660px){
+        .wrapper{
+          #support-top{
+            .support-tags{
+              gap: 30px;
+              .tag{
+                width: calc(50% - 15px);
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  
+}
