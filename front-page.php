@@ -25,7 +25,6 @@
 
 
       <?php get_template_part("parts/business");?>
-      <?php get_template_part("parts/middle");?>
 
 
       <div class="wrapper">
@@ -47,14 +46,13 @@
             <li class="news_list">
 
 
-              <div class="news_list--time">
-                <span class="genre-icon">ジャンル</span>
+              <div class="news_list--headline">
+                <p class="news_list--title"><?php echo the_title(); ?></p>
                 <time class="time">
                   <?php echo the_date('Y年度 m月'); ?>
                 </time>
               </div><!-- /.news_list--time -->
 
-              <p class="news_list--title"><?php echo the_title(); ?></p>
 
               <div class="news_list--content">
                 <p>
@@ -84,6 +82,15 @@
 
           <div class="btn">
             <a href="<?php home_url()?>/journal/">バックナンバー<span>→</span></a>
+          </div>
+        </section>
+
+        <section id="support">
+          <img src="<?= get_theme_file_uri(); ?>/img/love-icon.png" alt="">
+          <div class="text">
+            <h2>支援のお願い</h2>
+            <p>社会福祉法人サワリでは、法人理念と現場理念にご賛同いただける個人・法人・団体など全国の皆様からの寄付金の受付を行っております。</p>
+            <a href="/support/" class="access">詳細を見る<span>→</span></a>
           </div>
         </section>
       </div>

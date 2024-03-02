@@ -50,19 +50,15 @@
 }
 .coder1 #front-page #keyvisual .musical-notes div {
   width: 20%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 .coder1 #front-page #keyvisual .musical-notes div img {
   width: 100%;
   transition: opacity 1s;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .coder1 #front-page #keyvisual .musical-notes div img.hidden {
   opacity: 0;
@@ -70,17 +66,6 @@
 }
 .coder1 #front-page #keyvisual .musical-notes :nth-child(2n+1) {
   margin-top: auto;
-}
-@-webkit-keyframes note-up {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: translateY(-50%) rotate(5deg);
-  }
-  100% {
-    transform: rotate(-5deg);
-  }
 }
 @keyframes note-up {
   0% {
@@ -91,17 +76,6 @@
   }
   100% {
     transform: rotate(-5deg);
-  }
-}
-@-webkit-keyframes note-down {
-  0% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: translateY(50%) rotate(-5deg);
-  }
-  100% {
-    transform: rotate(5deg);
   }
 }
 @keyframes note-down {
@@ -117,6 +91,61 @@
 }
 .coder1 #front-page #news {
   margin-bottom: 160px;
+}
+.coder1 #front-page #news ul {
+  margin-bottom: 48px;
+  padding: 0 24px;
+}
+.coder1 #front-page #news ul li:not(:last-child) {
+  border-bottom: 1px dashed #ddd;
+}
+.coder1 #front-page #news ul li {
+  line-height: 24px;
+  padding: 16px 0;
+}
+.coder1 #front-page #news ul li .news_list--headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.coder1 #front-page #news ul li .news_list--headline p {
+  font-size: 18px;
+}
+.coder1 #front-page #support {
+  max-width: 800px;
+  width: calc(100% - 150px);
+  margin: 0 auto;
+  border: 3px solid #5AB8CD;
+  padding: 64px;
+  border-radius: 20px;
+  display: flex;
+  gap: 48px;
+  color: #3B4043;
+  margin-bottom: 100px;
+}
+.coder1 #front-page #support img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.coder1 #front-page #support .text h2 {
+  font-size: 24px;
+  color: #5AB8CD;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.coder1 #front-page #support .text p {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.coder1 #front-page #support .text .access {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 212px;
+  height: 36px;
+  border: 1px solid #5AB8CD;
+  border-radius: 0 12px 0 12px;
 }
 @media (max-width: 660px) {
   .coder1 #front-page #keyvisual {
@@ -142,7 +171,6 @@
   .coder1 #front-page #keyvisual .keyvisual-cityscape {
     display: block;
     position: absolute;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 194px;
@@ -479,7 +507,7 @@
 }
 @media (max-width: 800px) {
   .coder1 #page-support .wrapper #support-about,
-.coder1 #page-support .wrapper #kimono-about {
+  .coder1 #page-support .wrapper #kimono-about {
     padding-top: 100px;
   }
 }
@@ -553,7 +581,6 @@
 }
 .coder1 #page-employment #shops > div .shop img {
   width: 36%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -930,6 +957,9 @@
   filter: drop-shadow(1px 1px 2px #ddd) drop-shadow(-1px -1px 2px #ddd);
   transition: background-color 0.3s;
 }
+.coder1 header .inner nav .upper .tags .tag img {
+  width: 40px;
+}
 .coder1 header .inner nav .upper .tags .tag:hover {
   background-color: rgb(210, 219, 224);
 }
@@ -1028,7 +1058,6 @@
   }
   .coder1 header .inner nav .upper .tel {
     margin: 0 auto;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
