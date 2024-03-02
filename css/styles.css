@@ -122,6 +122,7 @@
   gap: 48px;
   color: #3B4043;
   margin-bottom: 100px;
+  align-items: center;
 }
 .coder1 #front-page #support img {
   height: -moz-fit-content;
