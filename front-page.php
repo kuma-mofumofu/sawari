@@ -44,7 +44,7 @@
             ?>
 
             <li class="news_list">
-
+              <a href="<?php the_permalink(); ?>">
 
               <div class="news_list--headline">
                 <p class="news_list--title"><?php echo the_title(); ?></p>
@@ -56,13 +56,11 @@
 
               <div class="news_list--content">
                 <p>
-                  <?php the_content();?>
+                <?php the_excerpt(); ?>
 
-                  <?php echo mb_substr(get_the_excerpt(), 0, 60); ?>
                 </p>
               </div><!-- /.news_list--content -->
-
-
+              </a>
             </li><!-- /.news_list -->
             <?php
               wp_reset_postdata();
