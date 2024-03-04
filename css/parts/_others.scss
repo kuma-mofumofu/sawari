@@ -199,6 +199,8 @@
     .lower-keyvisual{
       position: relative;
       overflow-x: hidden;
+      max-width: 1280px;
+      margin: 0 auto;
       .sp{
         display: none;
       }
