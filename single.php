@@ -28,6 +28,15 @@
       </h3>
 
       <?php the_content(); ?>
+      <div class="image_block">
+        <?php
+          if (has_post_thumbnail()) :
+            the_post_thumbnail('thumbnail');
+        ?>
+        <?php else : ?>
+            <img src="<?php bloginfo('template_url'); ?>/img/no_image.png" width="150" height="150" alt="アイキャッチがない時の画像" />
+        <?php endif ; ?>
+      </div><!-- /.image_block -->
 
     </div><!-- /.news--item -->
   </div><!-- /.news -->
