@@ -13,6 +13,7 @@
           <div class="outer">
             <h2 class="lower-h2">お問い合わせ</h2>
           </div>
+          <?php the_content(); ?>
       </section>
     </main>
 <?php get_footer(); ?>
