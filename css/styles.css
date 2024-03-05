@@ -956,6 +956,9 @@
   background: #fff;
   cursor: pointer;
 }
+.coder1 #page-contact #contact-top form > p .wpcf7-spinner {
+  display: none;
+}
 @media (max-width: 660px) {
   .coder1 #page-contact #contact-top form dl div {
     flex-direction: column;
