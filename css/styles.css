@@ -902,6 +902,49 @@
   }
 }
 
+.coder1 #page-contact #contact-top {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.coder1 #page-contact #contact-top .main-text {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 32px;
+  margin-bottom: 64px;
+}
+.coder1 #page-contact #contact-top form {
+  max-width: 900px;
+  text-align: left;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.coder1 #page-contact #contact-top form dl div {
+  display: flex;
+  margin-bottom: 36px;
+}
+.coder1 #page-contact #contact-top form dl div dt {
+  width: 230px;
+  margin-bottom: 20px;
+}
+.coder1 #page-contact #contact-top form dl div dd {
+  width: calc(100% - 240px);
+}
+.coder1 #page-contact #contact-top form dl div dd input, .coder1 #page-contact #contact-top form dl div dd textarea, .coder1 #page-contact #contact-top form dl div dd select {
+  width: calc(100% - 40px);
+  font-size: 20px;
+  padding: 20px;
+}
+@media (max-width: 660px) {
+  .coder1 #page-contact #contact-top form dl div {
+    flex-direction: column;
+  }
+  .coder1 #page-contact #contact-top form dl div dd {
+    width: 100%;
+  }
+}
+
 .coder1 header {
   position: fixed;
   padding: 0 20px;
