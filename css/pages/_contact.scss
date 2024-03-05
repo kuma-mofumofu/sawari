@@ -1,0 +1,56 @@
+@import "../global/variables";
+
+.coder1{
+    #page-contact{
+        #contact-top{
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 24px;
+            .main-text{
+                display: inline-block;
+                margin: 0 auto;
+                text-align: left;
+                line-height: 32px;
+                margin-bottom: 64px;
+            }
+            form{
+                max-width: 900px;
+                text-align: left;
+                font-size: 20px;
+                margin: 0 auto;
+                dl{
+                    div{
+                        display: flex;
+                        margin-bottom: 36px;
+                        dt{
+                            width: 230px;
+                            margin-bottom: 20px;
+                        }
+                        dd{
+                            width: calc(100% - 240px);
+                            input,textarea,select{
+                                width: calc(100% - 40px);
+                                font-size: 20px;
+                                padding: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:660px){
+            #contact-top{
+                form{
+                    dl{
+                        div{
+                            flex-direction: column;
+                            dd{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
