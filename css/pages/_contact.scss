@@ -6,34 +6,54 @@
             text-align: center;
             margin: 0 auto;
             padding: 0 24px;
+            margin-bottom: 100px;
             .main-text{
                 display: inline-block;
                 margin: 0 auto;
                 text-align: left;
                 line-height: 32px;
-                margin-bottom: 64px;
+                margin-bottom: 50px;
             }
             form{
                 max-width: 900px;
                 text-align: left;
                 font-size: 20px;
                 margin: 0 auto;
+                color: #4e4e4e;
                 dl{
                     div{
                         display: flex;
                         margin-bottom: 36px;
                         dt{
                             width: 230px;
-                            margin-bottom: 20px;
+                            padding: 20px 0;
                         }
                         dd{
                             width: calc(100% - 240px);
-                            input,textarea,select{
+                            input:not([type="radio"]),textarea{
                                 width: calc(100% - 40px);
                                 font-size: 20px;
                                 padding: 20px;
+                                border-radius: 6px;
+                            }
+                            select{
+                                width: 100%;
+                                font-size: 20px;
+                                padding: 20px;
+                                border-radius: 6px;
+                                cursor: pointer;
                             }
                         }
+                    }
+                }
+                & > p{
+                    text-align: center;
+                    input{
+                        border-radius: 6px;
+                        font-size: 20px;
+                        padding: 12px 24px;
+                        background: #fff;
+                        cursor: pointer;
                     }
                 }
             }
