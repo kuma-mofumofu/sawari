@@ -108,6 +108,8 @@
         li{
           line-height: 24px;
           padding: 16px 0;
+          a{
+            color: $font;
             .news_list--headline{
               display: flex;
               justify-content: space-between;
@@ -116,6 +118,8 @@
                 font-size: 18px;
               }
             }
+
+          }
         }
       }
     }
@@ -155,6 +159,10 @@
           height: 36px;
           border: 1px solid $tag-font;
           border-radius:0 12px 0 12px;
+          transition: border-radius .3s;
+          &:hover{
+            border-radius: 12px 0 12px 0;
+          }
         }
       }
     }
