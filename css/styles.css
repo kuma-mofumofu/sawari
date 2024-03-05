@@ -906,19 +906,21 @@
   text-align: center;
   margin: 0 auto;
   padding: 0 24px;
+  margin-bottom: 100px;
 }
 .coder1 #page-contact #contact-top .main-text {
   display: inline-block;
   margin: 0 auto;
   text-align: left;
   line-height: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
 }
 .coder1 #page-contact #contact-top form {
   max-width: 900px;
   text-align: left;
   font-size: 20px;
   margin: 0 auto;
+  color: #4e4e4e;
 }
 .coder1 #page-contact #contact-top form dl div {
   display: flex;
@@ -926,15 +928,33 @@
 }
 .coder1 #page-contact #contact-top form dl div dt {
   width: 230px;
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 .coder1 #page-contact #contact-top form dl div dd {
   width: calc(100% - 240px);
 }
-.coder1 #page-contact #contact-top form dl div dd input, .coder1 #page-contact #contact-top form dl div dd textarea, .coder1 #page-contact #contact-top form dl div dd select {
+.coder1 #page-contact #contact-top form dl div dd input:not([type=radio]), .coder1 #page-contact #contact-top form dl div dd textarea {
   width: calc(100% - 40px);
   font-size: 20px;
   padding: 20px;
+  border-radius: 6px;
+}
+.coder1 #page-contact #contact-top form dl div dd select {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.coder1 #page-contact #contact-top form > p {
+  text-align: center;
+}
+.coder1 #page-contact #contact-top form > p input {
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 12px 24px;
+  background: #fff;
+  cursor: pointer;
 }
 @media (max-width: 660px) {
   .coder1 #page-contact #contact-top form dl div {
