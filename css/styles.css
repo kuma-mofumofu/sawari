@@ -847,7 +847,7 @@
   border-bottom: 2px solid #5AB8CD;
 }
 #single .news--item p {
-  margin-bottom: 150px;
+  margin-bottom: 64px;
   line-height: 1.6;
 }
 #single .btn {
@@ -862,6 +862,17 @@
   display: block;
   line-height: 50px;
   color: #3B4043;
+}
+#single .image_block {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 84px;
+}
+#single .image_block img {
+  width: calc(50% - 42px);
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .coder1 #page-privacy #privacy-top {
