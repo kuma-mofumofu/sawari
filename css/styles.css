@@ -951,11 +951,28 @@
 .coder1 #page-contact #contact-top form dl div dd {
   width: calc(100% - 240px);
 }
-.coder1 #page-contact #contact-top form dl div dd input:not([type=radio]), .coder1 #page-contact #contact-top form dl div dd textarea {
+.coder1 #page-contact #contact-top form dl div dd input:not([type=radio], [type=checkbox]), .coder1 #page-contact #contact-top form dl div dd textarea {
   width: calc(100% - 40px);
   font-size: 20px;
   padding: 20px;
   border-radius: 6px;
+  border: 1px solid #4e4e4e;
+  resize: none;
+}
+.coder1 #page-contact #contact-top form dl div dd input:not([type=radio], [type=checkbox]):focus, .coder1 #page-contact #contact-top form dl div dd textarea:focus {
+  outline: 2px solid #5AB8CD;
+  border: none;
+}
+.coder1 #page-contact #contact-top form dl div dd input[type=radio] {
+  accent-color: #5AB8CD;
+}
+.coder1 #page-contact #contact-top form dl div dd input[type=radio] .wpcf7-radio {
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+.coder1 #page-contact #contact-top form dl div dd input[type=radio] .wpcf7-radio .wpcf7-list-item {
+  display: block;
 }
 .coder1 #page-contact #contact-top form dl div dd select {
   width: 100%;
@@ -963,6 +980,19 @@
   padding: 20px;
   border-radius: 6px;
   cursor: pointer;
+}
+.coder1 #page-contact #contact-top form dl div dd select:focus {
+  outline: 2px solid #5AB8CD;
+  border: none;
+}
+.coder1 #page-contact #contact-top form dl .privacy dd a {
+  display: block;
+  color: #5AB8CD;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.coder1 #page-contact #contact-top form dl .privacy dd a:hover {
+  text-decoration: underline;
 }
 .coder1 #page-contact #contact-top form > p {
   text-align: center;
@@ -973,6 +1003,11 @@
   padding: 12px 24px;
   background: #fff;
   cursor: pointer;
+  border: 1px solid #4e4e4e;
+  transition: background 0.3s;
+}
+.coder1 #page-contact #contact-top form > p input:hover {
+  background: #E6EFF4;
 }
 .coder1 #page-contact #contact-top form > p .wpcf7-spinner {
   display: none;
