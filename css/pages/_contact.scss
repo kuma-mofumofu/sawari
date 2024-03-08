@@ -68,6 +68,9 @@
                     }
                     .privacy{
                         dd{
+                            input{
+                                accent-color: $tag-font;
+                            }
 
                             a{
                                 display: block;
