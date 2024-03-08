@@ -74,6 +74,8 @@
           <h2 class="sub_title">エクレーシア最新号</h2>
           <?php get_template_part("parts/new_journal");?>
 
+          <?php the_content(); ?>
+
           <div class="btn">
             <a href="<?php home_url()?>/ecclesia/">エクレーシアについて<span>→</span></a>
           </div>
