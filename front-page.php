@@ -70,21 +70,28 @@
           <a href="/news/" class="continuation">続きを見る<span>→</span></a>
         </section>
 
+      </div>
+
         <section id="ecclesia">
-          <h2 class="sub_title">エクレーシア最新号</h2>
-          <?php get_template_part("parts/new_journal");?>
+          <div class="square">
+            <h2 class="sub_title">
+              <img src="<?= get_theme_file_uri(); ?>/img/gathering.png" alt="">
+              <span>エクレーシア最新号</span>
+            </h2>
 
-          <?php the_content(); ?>
+            <?php get_template_part("parts/new_journal");?>
 
-          <div class="btn">
-            <a href="<?php home_url()?>/ecclesia/">エクレーシアについて<span>→</span></a>
-          </div>
 
-          <div class="btn">
-            <a href="<?php home_url()?>/journal/">バックナンバー<span>→</span></a>
+
+            <div class="continuations">
+              <a href="<?php home_url()?>/ecclesia/" class="continuation">エクレーシアについて<span>→</span></a>
+              <a href="<?php home_url()?>/journal/" class="continuation">バックナンバー<span>→</span></a>
+            </div>
+
           </div>
         </section>
-
+        
+      <div class="wrapper">
         <section id="support">
           <img src="<?= get_theme_file_uri(); ?>/img/love-icon.png" alt="">
           <div class="text">
