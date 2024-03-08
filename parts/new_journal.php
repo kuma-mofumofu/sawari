@@ -20,6 +20,8 @@
         </time>
         <p class="number">Vol.<?php the_field('journal_number'); ?></p>
       </div><!-- /.pdf--text -->
+
+      <?php the_content(); ?>
     </a>
   </li>
 
