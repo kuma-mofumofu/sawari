@@ -114,6 +114,29 @@
 .coder1 #front-page #news ul li a .news_list--headline p {
   font-size: 18px;
 }
+.coder1 #front-page #ecclesia {
+  background: #E6EFF4;
+  padding: 50px 24px;
+  margin-bottom: 50px;
+}
+.coder1 #front-page #ecclesia .square {
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 36px 64px;
+}
+.coder1 #front-page #ecclesia .square h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 48px;
+}
+.coder1 #front-page #ecclesia .square h2 span {
+  display: block;
+}
+.coder1 #front-page #ecclesia .square .continuations {
+  margin-bottom: 0;
+}
 .coder1 #front-page #support {
   max-width: 800px;
   width: calc(100% - 150px);
@@ -984,6 +1007,9 @@
 .coder1 #page-contact #contact-top form dl div dd select:focus {
   outline: 2px solid #5AB8CD;
   border: none;
+}
+.coder1 #page-contact #contact-top form dl .privacy dd input {
+  accent-color: #5AB8CD;
 }
 .coder1 #page-contact #contact-top form dl .privacy dd a {
   display: block;
