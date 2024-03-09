@@ -1007,6 +1007,20 @@
 .coder1 #page-contact #contact-top form dl div dd select:focus {
   outline: 2px solid #5AB8CD;
 }
+.coder1 #page-contact #contact-top form dl .select dd p {
+  position: relative;
+}
+.coder1 #page-contact #contact-top form dl .select dd p::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #3B4043;
+  border-bottom: 2px solid #3B4043;
+  transform: rotate(45deg);
+  right: 24px;
+  top: 20px;
+}
 .coder1 #page-contact #contact-top form dl .privacy dd input {
   accent-color: #5AB8CD;
 }
@@ -1044,6 +1058,44 @@
   .coder1 #page-contact #contact-top form dl div dd {
     width: 100%;
   }
+}
+
+.coder1 #page-ecclesia section {
+  padding-top: 48px;
+}
+.coder1 #page-ecclesia section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 36px;
+}
+.coder1 #page-ecclesia #latest {
+  margin-bottom: 64px;
+}
+.coder1 #page-ecclesia #backnumber {
+  background: #E6EFF4;
+  margin-bottom: 100px;
+  padding-bottom: 60px;
+}
+.coder1 #page-ecclesia #backnumber ul {
+  display: flex;
+  margin: 0 auto;
+  gap: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 84px;
+}
+.coder1 #page-ecclesia #backnumber .btn a {
+  display: block;
+  color: #fff;
+  background: #5AB8CD;
+  width: 360px;
+  text-align: center;
+  margin: 0 auto 60px;
+  padding: 14px 0;
+  font-size: 20px;
+}
+.coder1 #page-ecclesia #backnumber .btn a:hover {
+  text-decoration: underline;
 }
 
 .coder1 header {
