@@ -37,6 +37,7 @@
 }
 .coder1 #front-page #keyvisual .text p:not(.catch-copy) a {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
   color: #5AB8CD;
 }
 .coder1 #front-page #keyvisual .musical-notes {
@@ -1032,6 +1033,7 @@
 }
 .coder1 #page-contact #contact-top form dl .privacy dd a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .coder1 #page-contact #contact-top form > p {
   text-align: center;
@@ -1569,6 +1571,7 @@
 .coder1 .button:hover {
   border-radius: 10px 0 10px 0;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 .coder1 .continuation {
   display: block;
