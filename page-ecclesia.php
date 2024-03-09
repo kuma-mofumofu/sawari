@@ -28,12 +28,12 @@
       </div>
     </section>
 
-    <section>
+    <section id="latest">
       <h2>最新号</h2>
       <?php get_template_part("parts/new_journal");?>
     </section>
 
-    <section>
+    <section id="backnumber">
       <h2>バックナンバー</h2>
       <ul>
         <?php
@@ -65,7 +65,7 @@
       </ul>
 
       <div class="btn">
-        <a href="<?php home_url()?>/journal/">もっと見る></a>
+        <a href="<?php home_url()?>/journal/">もっと見る</a>
       </div>
     </section>
 
