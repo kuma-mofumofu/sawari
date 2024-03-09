@@ -1964,4 +1964,13 @@
   .coder1 .businesses #businesses-flow ul li .text {
     width: calc(100% - 134px);
   }
+}
+
+.new_journal {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.new_journal ul li a {
+  display: flex;
+  gap: 36px;
 }/*# sourceMappingURL=styles.css.map */
