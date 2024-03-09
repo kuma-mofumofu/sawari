@@ -1,0 +1,14 @@
+@import "../global/variables";
+
+.new_journal{
+    max-width: 800px;
+    margin: 0 auto;
+    ul{
+        li{
+            a{
+                display: flex;
+                gap: 36px;
+            }
+        }
+    }
+}
