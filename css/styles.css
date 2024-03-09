@@ -989,14 +989,6 @@
 .coder1 #page-contact #contact-top form dl div dd input[type=radio] {
   accent-color: #5AB8CD;
 }
-.coder1 #page-contact #contact-top form dl div dd input[type=radio] .wpcf7-radio {
-  flex-direction: column;
-  display: flex;
-  flex-direction: column;
-}
-.coder1 #page-contact #contact-top form dl div dd input[type=radio] .wpcf7-radio .wpcf7-list-item {
-  display: block;
-}
 .coder1 #page-contact #contact-top form dl div dd select {
   width: 100%;
   font-size: 20px;
