@@ -44,14 +44,6 @@
                             }
                             input[type="radio"]{
                                 accent-color: $tag-font;
-                                .wpcf7-radio{
-                                    flex-direction: column;
-                                    display: flex;
-                                    flex-direction: column;
-                                    .wpcf7-list-item{
-                                        display: block;
-                                    }
-                                }
                             }
                             select{
                                 width: 100%;
