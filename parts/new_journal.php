@@ -13,15 +13,19 @@
         <img src="<?php the_field('journal_image'); ?>" >
       </div><!-- /.pdf--image -->
 
-      <div class="pdf--text">
-        <span class="new_icon">NEW</span>
-        <time class="time">
-          <?php echo get_the_date('Y年度 m月'); ?>
-        </time>
-        <p class="number">Vol.<?php the_field('journal_number'); ?></p>
-      </div><!-- /.pdf--text -->
+      <div class="text">
 
-      <?php the_content(); ?>
+        <div class="pdf--text">
+          <time class="time">
+            <?php echo get_the_date('Y年度 m月'); ?>
+          </time>
+          <span class="new_icon">NEW</span>
+          <p class="number">Vol.<?php the_field('journal_number'); ?></p>
+        </div><!-- /.pdf--text -->
+
+        <?php the_content(); ?>
+
+      </div>
     </a>
   </li>
 
