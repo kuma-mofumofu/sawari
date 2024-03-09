@@ -35,11 +35,11 @@
                                 font-size: 20px;
                                 padding: 20px;
                                 border-radius: 6px;
-                                border: 1px solid #4e4e4e;
+                                outline: 1px solid #4e4e4e;
+                                border: none;
                                 resize: none;
                                 &:focus{
                                     outline: 2px solid $tag-font;
-                                    border: none;
                                 }
                             }
                             input[type="radio"]{
@@ -51,9 +51,13 @@
                                 padding: 20px;
                                 border-radius: 6px;
                                 cursor: pointer;
+                                -webkit-appearance: none;
+                                background: none;
+                                outline: 1px solid #4e4e4e;
+                                border: none;
+                                position: relative;
                                 &:focus{
                                     outline: 2px solid $tag-font;
-                                    border: none;
                                 }
                             }
                         }
