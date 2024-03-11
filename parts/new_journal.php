@@ -14,14 +14,16 @@
       </div><!-- /.pdf--image -->
 
       <div class="text">
-
-        <div class="pdf--text">
+        <div class="upper">
           <time class="time">
             <?php echo get_the_date('Y年度 m月'); ?>
           </time>
           <span class="new_icon">NEW</span>
-          <p class="number">Vol.<?php the_field('journal_number'); ?></p>
-        </div><!-- /.pdf--text -->
+        </div>
+        <div class="lower">
+          <span class="number">Vol.<?php the_field('journal_number'); ?></span>
+          <span class="file"><img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">(<?php the_field('file_size'); ?>)</span>
+        </div>
 
         <?php the_content(); ?>
 
