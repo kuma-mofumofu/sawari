@@ -447,11 +447,9 @@
   }
 }
 
-.coder1 #page-support {
-  line-height: 32px;
-}
 .coder1 #page-support .wrapper #support-top {
   padding: 0 12px;
+  line-height: 32px;
 }
 .coder1 #page-support .wrapper #support-top .support-tags {
   display: flex;
@@ -483,6 +481,7 @@
 .coder1 #page-support .wrapper #kimono-about {
   padding: 0 12px;
   padding-top: 135px;
+  line-height: 32px;
 }
 .coder1 #page-support .wrapper #support-about h3,
 .coder1 #page-support .wrapper #kimono-about h3 {
@@ -818,6 +817,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s;
 }
 #archive .wp-pagenavi .current {
   background: #5AB8CD;
@@ -887,8 +887,13 @@
 }
 #single .btn a {
   display: block;
+  border-radius: 10px;
   line-height: 50px;
   color: #3B4043;
+  transition: background 0.3s;
+}
+#single .btn a:hover {
+  background: #E6EFF4;
 }
 #single .image_block {
   margin-bottom: 64px;
@@ -1581,6 +1586,7 @@
   text-align: center;
   border: 1px solid #5AB8CD;
   color: #3B4043;
+  transition: background 0.3s;
 }
 .coder1 .continuation .color {
   color: #5AB8CD;
@@ -1588,6 +1594,9 @@
 .coder1 .continuation span:not(.color) {
   transition: transform 0.3s;
   display: inline-block;
+}
+.coder1 .continuation:hover {
+  background: #E6EFF4;
 }
 .coder1 .continuation:hover span:not(.color) {
   transform: translateX(6px);
