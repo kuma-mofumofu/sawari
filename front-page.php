@@ -67,7 +67,7 @@
               endforeach;
             ?>
           </ul>
-          <a href="/news/" class="continuation">続きを見る<span>→</span></a>
+          <a href="/news/" class="continuation">続きを見る</a>
         </section>
 
       </div>
@@ -84,8 +84,8 @@
 
 
             <div class="continuations">
-              <a href="<?php home_url()?>/ecclesia/" class="continuation">エクレーシアについて<span>→</span></a>
-              <a href="<?php home_url()?>/journal/" class="continuation">バックナンバー<span>→</span></a>
+              <a href="<?php home_url()?>/ecclesia/" class="continuation">エクレーシアについて</a>
+              <a href="<?php home_url()?>/journal/" class="continuation">バックナンバー</a>
             </div>
 
           </div>
