@@ -57,7 +57,7 @@
     </ul><!-- /.news--list -->
   </div><!-- /.news -->
 
-  <?php wp_pagenavi(); ?>
+<?php wp_pagenavi(); ?>
 
 
   <?php get_template_part('parts/continuations'); ?>  
