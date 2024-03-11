@@ -155,6 +155,7 @@
       text-align: center;
       border: 1px solid $tag-font;
       color: $font;
+      transition: background .3s;
   
       .color{
         color: $tag-font;
@@ -165,6 +166,7 @@
         display: inline-block;
       }
       &:hover{
+        background: $tag-bg;
         span:not(.color){
           transform: translateX(6px);
         }
