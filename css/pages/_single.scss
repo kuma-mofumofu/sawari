@@ -54,8 +54,13 @@
 
   a{
    display: block;
+   border-radius: 10px;
    line-height: 50px;
    color: $font;
+   transition: background .3s;
+   &:hover{
+    background: $tag-bg;
+   }
 
   }
  }
