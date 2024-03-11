@@ -21,7 +21,7 @@
             </a>
             <a href="#kimono-about" class="tag">
               <img src="<?= get_theme_file_uri(); ?>/img/kimono-icon.png" alt="">
-              <span>着物のご寄付</span>
+              <span>着物のご寄贈</span>
             </a>
           </div>
         </section>
