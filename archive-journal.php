@@ -31,9 +31,12 @@
   
             <div class="pdf--text">
               <time class="time">
-                <?php echo get_the_date('Y年度 m月'); ?>
+                <?php echo get_the_date('Y年度 m月'); ?>発行
               </time>
-              <p class="number">Vol.<?php the_field('journal_number'); ?></p>
+              <div class="lower">
+                <p class="number">Vol.<?php the_field('journal_number'); ?></p>
+                <span class="file"><img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">(<?php the_field('file_size'); ?>)</span>
+              </div>
             </div><!-- /.pdf--text -->
           </a>
         </li><!-- /.pdf -->
