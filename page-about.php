@@ -104,7 +104,7 @@
             社会福祉法人サワリでは、サワリの活動を応援してくださる皆様（個人・法人・団体等）、障害者福祉に関心のある皆様からの支援金の受付を行っております。<br>
             支援金は、当施設利用者さんの生活環境の向上、施設設備の充実等として、大切に使わせていただきます。多くの皆様のご支援、ご協力をお願い申し上げます。<br>
           </p>
-          <a href="/support/" class="continuation">詳細を見る<span>→</span></a>
+          <a href="/support/" class="continuation">詳細を見る</a>
         </section>
       </div>
 
@@ -112,7 +112,7 @@
         <section id="journal">
           <h3>機関紙「エクレーシア」</h3>
           <p>社会福祉法人サワリでは、年2回機関紙を発刊しています。施設利用者の絵や小説、利用者インタビューや理事長の言葉など、サワリの活動や現状を知っていただくことができる定期刊行物です。</p>
-          <a href="/journal/" class="continuation">詳細を見る<span>→</span></a>
+          <a href="/journal/" class="continuation">詳細を見る</a>
         </section>
       </div>
     </main>
