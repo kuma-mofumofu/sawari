@@ -16,7 +16,7 @@
       <div class="text">
         <div class="upper">
           <time class="time">
-            <?php echo get_the_date('Y年度 m月'); ?>
+            <?php echo get_the_date('Y年度 m月発行'); ?>
           </time>
           <span class="new_icon">NEW</span>
         </div>
