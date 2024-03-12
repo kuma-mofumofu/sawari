@@ -35,6 +35,7 @@
                 <time class="time">
                   <?php echo get_the_date('Y年度 m月'); ?>
                 </time>
+                
               </div>
               <div class="lower">
                 <span class="number">Vol.<?php the_field('journal_number'); ?></span>
