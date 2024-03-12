@@ -1083,14 +1083,6 @@
   margin-bottom: 100px;
   padding-bottom: 60px;
 }
-.coder1 #page-ecclesia #backnumber ul {
-  display: flex;
-  margin: 0 auto;
-  gap: 60px;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 84px;
-}
 .coder1 #page-ecclesia #backnumber .btn a {
   display: block;
   color: #fff;
@@ -1663,6 +1655,20 @@
 }
 .coder1 .access:hover span {
   transform: translateX(6px);
+}
+.coder1 .ecclesia-ul {
+  display: flex;
+  margin: 0 auto;
+  gap: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 84px;
+}
+.coder1 .pdf .pdf--text .lower {
+  display: flex;
+}
+.coder1 .pdf .pdf--text .lower img {
+  width: 20px;
 }
 @media (max-width: 800px) {
   .coder1 {
