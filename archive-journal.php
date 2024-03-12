@@ -25,21 +25,25 @@
 
         <li class="pdf">
           <a href="<?php the_field('journal_pdf');?>" target="_blank">
+
             <div class="pdf--image">
               <img src="<?php the_field('journal_image'); ?>" >
             </div><!-- /.pdf--image -->
-  
-            <div class="pdf--text">
-              <time class="time">
-                <?php echo get_the_date('Y年度 m月'); ?>発行
-              </time>
+
+            <div class="text">
+              <div class="upper">
+                <time class="time">
+                  <?php echo get_the_date('Y年度 m月'); ?>
+                </time>
+              </div>
               <div class="lower">
-                <p class="number">Vol.<?php the_field('journal_number'); ?></p>
+                <span class="number">Vol.<?php the_field('journal_number'); ?></span>
                 <span class="file"><img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">(<?php the_field('file_size'); ?>)</span>
               </div>
-            </div><!-- /.pdf--text -->
+
+            </div>
           </a>
-        </li><!-- /.pdf -->
+        </li>
 
         <?php
             endwhile;
