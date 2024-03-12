@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+  $counter = 0;
+  get_header(); 
+?>
 
   <main id="page-journal">
 
@@ -20,6 +23,7 @@
           if(have_posts()):
             while(have_posts($post)):
               the_post();
+              $counter++;
             setup_postdata($post);
         ?>
 
@@ -35,6 +39,7 @@
                 <time class="time">
                   <?php echo get_the_date('Y年度 m月発行'); ?>
                 </time>
+                
                 
               </div>
               <div class="lower">
