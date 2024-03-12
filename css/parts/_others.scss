@@ -250,6 +250,30 @@
     }
 
 
+    .ecclesia-ul{
+      display: flex;
+      margin: 0 auto;
+      gap: 60px;
+      width: fit-content;
+      margin-bottom: 84px;
+    }
+
+    .pdf{
+      .pdf--text{
+        .upper{
+          
+        }
+        .lower{
+          display: flex;
+          img{
+            width: 20px;
+
+          }
+        }
+      }
+    }
+
+
 
   
 
