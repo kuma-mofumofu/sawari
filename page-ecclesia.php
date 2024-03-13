@@ -67,6 +67,8 @@
         <?php
           endforeach;
         ?>
+
+        <li class="style"></li>
       </ul>
 
       <div class="btn">
