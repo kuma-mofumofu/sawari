@@ -554,6 +554,12 @@
   }
 }
 
+.coder1 #page-journal .ecclesia {
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1028px;
+}
+
 .coder1 #page-employment .employment-about {
   line-height: 32px;
   border-bottom: 1px dashed #5AB8CD;
@@ -1095,6 +1101,12 @@
 }
 .coder1 #page-ecclesia #backnumber .btn a:hover {
   text-decoration: underline;
+}
+
+.coder1 #page-journal .ecclesia {
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1028px;
 }
 
 .coder1 header {
@@ -1658,13 +1670,17 @@
 }
 .coder1 .ecclesia--list {
   display: flex;
-  margin: 0 auto;
   gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 auto;
   margin-bottom: 84px;
-  flex-wrap: wrap;
-  flex-shrink: 4;
+}
+.coder1 .ecclesia--list .style {
+  display: block;
+  width: 200px;
 }
 .coder1 .pdf a {
   color: #3B4043;
