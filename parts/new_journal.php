@@ -22,7 +22,8 @@
         </div>
         <div class="lower">
           <span class="number">Vol.<?php the_field('journal_number'); ?></span>
-          <span class="file"><img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">(<?php the_field('file_size'); ?>)</span>
+          <img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">
+          <span class="file">(<?php the_field('file_size'); ?>)</span>
         </div>
 
         <?php the_content(); ?>
