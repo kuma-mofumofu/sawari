@@ -35,7 +35,7 @@
 
     <section id="backnumber">
       <h2>バックナンバー</h2>
-      <ul class="ecclesia-ul">
+      <ul class="ecclesia--list">
         <?php
           $ecclesia_posts = get_ecclesia_posts();
 
@@ -49,13 +49,16 @@
                 <img src="<?php the_field('journal_image'); ?>" >
               </div><!-- /.pdf--image -->
     
-              <div class="pdf--text">
-                <time class="time">
-                  <?php echo get_the_date('Y年度 m月'); ?>発行
-                </time>
+              <div class="text">
+                <div class="upper">
+                  <time class="time">
+                    <?php echo get_the_date('Y年度 m月'); ?>発行
+                  </time>
+                </div>
                 <div class="lower">
-                  <p class="number">Vol.<?php the_field('journal_number'); ?></p>
-                  <span class="file"><img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">(<?php the_field('file_size'); ?>)</span>
+                  <span class="number">Vol.<?php the_field('journal_number'); ?></span>
+                  <img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">
+                  <span class="file">(<?php the_field('file_size'); ?>)</span>
                 </div>
               </div><!-- /.pdf--text -->
             </a>
