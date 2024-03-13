@@ -257,10 +257,13 @@
       justify-content: center;
       width: fit-content;
       margin: 0 auto;
-      margin-bottom: 84px;
+      margin-bottom: 64px;
       .style{
         display: block;
         width: 200px;
+        margin: 0;
+        height: 0;
+        padding: 0;
       }
     }
 
@@ -322,11 +325,6 @@
   
     @media(max-width: 800px){
       padding-top: 100px;
-
-      .ecclesia--list{
-        flex-direction: column;
-        gap: 36px;
-      }
     }
     @media (max-width:660px) {
       .headline{
@@ -361,6 +359,16 @@
           display: block;
           width: 100%;
 
+        }
+      }
+
+
+
+      .ecclesia--list{
+        flex-direction: column;
+        gap: 36px;
+        .style{
+          display: none;
         }
       }
   
