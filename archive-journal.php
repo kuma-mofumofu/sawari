@@ -23,7 +23,6 @@
           if(have_posts()):
             while(have_posts($post)):
               the_post();
-              $counter++;
             setup_postdata($post);
         ?>
 
@@ -39,12 +38,15 @@
                 <time class="time">
                   <?php echo get_the_date('Y年度 m月発行'); ?>
                 </time>
-                
+                <?php if($counter == 0): ?>
+                  <span class="new_icon">NEW</span>
+                <?php endif; ?>
                 
               </div>
               <div class="lower">
                 <span class="number">Vol.<?php the_field('journal_number'); ?></span>
-                <span class="file"><img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">(<?php the_field('file_size'); ?>)</span>
+                <img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">
+                <span class="file">(<?php the_field('file_size'); ?>)</span>
               </div>
 
             </div>
@@ -52,6 +54,7 @@
         </li>
 
         <?php
+            $counter++;
             endwhile;
           endif;
         ?>
