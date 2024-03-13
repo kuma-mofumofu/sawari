@@ -1694,7 +1694,6 @@
 .coder1 .pdf a .text .lower {
   display: flex;
   gap: 8px;
-  margin-bottom: 24px;
 }
 .coder1 .pdf a .text .lower span {
   display: block;
@@ -1708,6 +1707,7 @@
   width: 20px;
 }
 .coder1 .pdf a .text p {
+  padding-top: 24px;
   line-height: 24px;
 }
 @media (max-width: 800px) {
@@ -1716,7 +1716,7 @@
   }
   .coder1 .ecclesia--list {
     flex-direction: column;
-    gap: 0;
+    gap: 36px;
   }
 }
 @media (max-width: 660px) {
