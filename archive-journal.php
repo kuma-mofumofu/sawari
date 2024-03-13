@@ -58,6 +58,9 @@
             endwhile;
           endif;
         ?>
+        <li class="style"></li>
+        <li class="style"></li>
+        <li class="style"></li>
 
       </ul><!-- /.ecclesia--list -->
     </div><!-- /.ecclesia -->
