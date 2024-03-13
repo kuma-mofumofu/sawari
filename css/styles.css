@@ -1664,11 +1664,49 @@
   width: fit-content;
   margin-bottom: 84px;
 }
-.coder1 .pdf .pdf--text .lower {
-  display: flex;
+.coder1 .pdf a {
+  color: #3B4043;
 }
-.coder1 .pdf .pdf--text .lower img {
+.coder1 .pdf a .text {
+  line-height: 24px;
+}
+.coder1 .pdf a .text .upper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.coder1 .pdf a .text .upper time::before {
+  display: none;
+}
+.coder1 .pdf a .text .upper .new_icon {
+  color: #fff;
+  background: #5AB8CD;
+  font-size: 12px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 16px;
+  width: 32px;
+}
+.coder1 .pdf a .text .lower {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.coder1 .pdf a .text .lower span {
+  display: block;
+}
+.coder1 .pdf a .text .lower .number {
+  font-size: 24px;
+  color: #5AB8CD;
+  text-decoration: underline;
+}
+.coder1 .pdf a .text .lower img {
   width: 20px;
+}
+.coder1 .pdf a .text p {
+  line-height: 24px;
 }
 @media (max-width: 800px) {
   .coder1 {
@@ -1706,6 +1744,9 @@
   .coder1 .lower-keyvisual .sp {
     display: block;
     width: 100%;
+  }
+  .coder1 .pdf .eclessia-list {
+    flex-direction: column;
   }
 }
 
