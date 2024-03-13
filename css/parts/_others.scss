@@ -259,17 +259,52 @@
     }
 
     .pdf{
-      .pdf--text{
-        .upper{
-          
-        }
-        .lower{
-          display: flex;
-          img{
-            width: 20px;
-
+      a{
+        color: $font;
+        .text{
+          line-height: 24px;
+          .upper{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 16px;
+            time{
+              &::before{
+                display: none;
+              }
+            }
+            .new_icon{
+              color: #fff;
+              background: $tag-font;
+              font-size: 12px;
+              justify-content: center;
+              display: flex;
+              align-items: center;
+              height: 16px;
+              width: 32px;
+            }
+          }
+          .lower{
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            span{
+              display: block;
+            }
+            .number{
+              font-size: 24px;
+              color: $tag-font;
+              text-decoration: underline;
+            }
+            img{
+              width: 20px;
+            }
+          }
+          p{
+            line-height: 24px;
           }
         }
+
       }
     }
 
@@ -315,6 +350,12 @@
           display: block;
           width: 100%;
 
+        }
+      }
+
+      .pdf{
+        .eclessia-list{
+          flex-direction: column;
         }
       }
   
