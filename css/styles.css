@@ -177,10 +177,11 @@
   height: 36px;
   border: 1px solid #5AB8CD;
   border-radius: 0 12px 0 12px;
-  transition: border-radius 0.3s;
+  transition: border-radius 0.3s, background 0.3s;
 }
 .coder1 #front-page #support .text .access:hover {
   border-radius: 12px 0 12px 0;
+  background: #E6EFF4;
 }
 @media (max-width: 660px) {
   .coder1 #front-page #keyvisual {
@@ -233,6 +234,9 @@
   }
   .coder1 #front-page #news {
     margin-bottom: 60px;
+  }
+  .coder1 #front-page #support {
+    flex-direction: column;
   }
 }
 
@@ -1076,9 +1080,6 @@
   }
 }
 
-.coder1 #page-ecclesia section {
-  padding-top: 48px;
-}
 .coder1 #page-ecclesia section h2 {
   text-align: center;
   font-size: 28px;
@@ -1086,11 +1087,16 @@
 }
 .coder1 #page-ecclesia #latest {
   margin-bottom: 64px;
+  padding: 0 24px;
+  padding-top: 48px;
 }
 .coder1 #page-ecclesia #backnumber {
   background: #E6EFF4;
   margin-bottom: 100px;
-  padding-bottom: 60px;
+  padding: 48px 24px 60px;
+}
+.coder1 #page-ecclesia #backnumber ul {
+  max-width: 720px;
 }
 .coder1 #page-ecclesia #backnumber .btn a {
   display: block;
@@ -2119,7 +2125,6 @@
   .new_journal ul li a {
     flex-direction: column;
     align-items: center;
-    padding: 0 24px;
   }
   .new_journal ul li a .text .upper,
   .new_journal ul li a .text .lower {
