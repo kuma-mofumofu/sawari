@@ -289,7 +289,6 @@
           .lower{
             display: flex;
             gap: 8px;
-            margin-bottom: 24px;
             span{
               display: block;
             }
@@ -303,6 +302,7 @@
             }
           }
           p{
+            padding-top: 24px;
             line-height: 24px;
           }
         }
@@ -321,7 +321,7 @@
 
       .ecclesia--list{
         flex-direction: column;
-        gap: 0;
+        gap: 36px;
       }
     }
     @media (max-width:660px) {
