@@ -11,4 +11,22 @@
             }
         }
     }
+
+    @media(max-width:660px){
+        ul{
+            li{
+                a{
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 24px;
+                    .text{
+                        .upper,
+                        .lower{
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
