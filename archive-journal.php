@@ -63,6 +63,8 @@
         <li class="style"></li>
 
       </ul><!-- /.ecclesia--list -->
+
+      <a class="continuation">機関紙一覧へ戻る</a>
     </div><!-- /.ecclesia -->
 
 
