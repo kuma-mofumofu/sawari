@@ -3,7 +3,6 @@
 .coder1{
     #page-ecclesia{
         section{
-            padding-top: 48px;
             h2{
                 text-align: center;
                 font-size: 28px;
@@ -12,11 +11,16 @@
         }
         #latest{
             margin-bottom: 64px;
+            padding: 0 24px;
+            padding-top: 48px;
         }
         #backnumber{
             background: $tag-bg;
             margin-bottom: 100px;
-            padding-bottom: 60px;
+            padding: 48px 24px 60px;
+            ul{
+                max-width: 720px;
+            }
             .btn{
                 a{
                     display: block;
