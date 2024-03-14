@@ -168,21 +168,6 @@
   line-height: 30px;
   margin-bottom: 20px;
 }
-.coder1 #front-page #support .text .access {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 212px;
-  height: 36px;
-  border: 1px solid #5AB8CD;
-  border-radius: 0 12px 0 12px;
-  transition: border-radius 0.3s, background 0.3s;
-}
-.coder1 #front-page #support .text .access:hover {
-  border-radius: 12px 0 12px 0;
-  background: #E6EFF4;
-}
 @media (max-width: 660px) {
   .coder1 #front-page #keyvisual {
     height: calc(100dvh - 100px);
@@ -1602,20 +1587,15 @@
   text-align: center;
   border: 1px solid #5AB8CD;
   color: #3B4043;
-  transition: background 0.3s;
+  border-radius: 0 12px 0 12px;
+  transition: border-radius 0.3s, background 0.3s;
 }
 .coder1 .continuation .color {
   color: #5AB8CD;
 }
-.coder1 .continuation span:not(.color) {
-  transition: transform 0.3s;
-  display: inline-block;
-}
 .coder1 .continuation:hover {
   background: #E6EFF4;
-}
-.coder1 .continuation:hover span:not(.color) {
-  transform: translateX(6px);
+  border-radius: 12px 0 12px 0;
 }
 .coder1 h3 {
   text-align: center;
