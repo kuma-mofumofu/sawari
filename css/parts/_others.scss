@@ -144,6 +144,7 @@
       &:hover{
         border-radius: 10px 0 10px 0;
         text-decoration: underline;
+        text-decoration-thickness: 1px;
       }
     }
     .continuation{
@@ -153,20 +154,17 @@
       width: 212px;
       text-align: center;
       border: 1px solid $tag-font;
-      color: #707070;
+      color: $font;
+      border-radius:0 12px 0 12px;
+      transition: border-radius .3s,background .3s;
   
       .color{
         color: $tag-font;
       }
   
-      span:not(.color){
-        transition: transform .3s;
-        display: inline-block;
-      }
       &:hover{
-        span:not(.color){
-          transform: translateX(6px);
-        }
+        background: $tag-bg;
+        border-radius: 12px 0 12px 0;
       }
     }
   
@@ -199,6 +197,8 @@
     .lower-keyvisual{
       position: relative;
       overflow-x: hidden;
+      max-width: 1280px;
+      margin: 0 auto;
       .sp{
         display: none;
       }
@@ -245,6 +245,74 @@
     }
 
 
+    .ecclesia--list{
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 64px;
+      .style{
+        display: block;
+        width: 200px;
+        margin: 0;
+        height: 0;
+        padding: 0;
+      }
+    }
+
+    .pdf{
+      a{
+        color: $font;
+        .text{
+          line-height: 24px;
+          .upper{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 16px;
+            time{
+              &::before{
+                display: none;
+              }
+            }
+            .new_icon{
+              color: #fff;
+              background: $tag-font;
+              font-size: 12px;
+              justify-content: center;
+              display: flex;
+              align-items: center;
+              height: 16px;
+              width: 32px;
+            }
+          }
+          .lower{
+            display: flex;
+            gap: 8px;
+            span{
+              display: block;
+            }
+            .number{
+              font-size: 24px;
+              color: $tag-font;
+              text-decoration: underline;
+            }
+            img{
+              width: 20px;
+            }
+          }
+          p{
+            padding-top: 24px;
+            line-height: 24px;
+          }
+        }
+
+      }
+    }
+
+
 
   
 
@@ -286,6 +354,16 @@
           display: block;
           width: 100%;
 
+        }
+      }
+
+
+
+      .ecclesia--list{
+        flex-direction: column;
+        gap: 36px;
+        .style{
+          display: none;
         }
       }
   

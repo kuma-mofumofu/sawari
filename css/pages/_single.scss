@@ -37,7 +37,7 @@
   }
 
   p{
-   margin-bottom: 150px;
+   margin-bottom: 64px;
    line-height: 1.6;
   }
  }
@@ -54,9 +54,25 @@
 
   a{
    display: block;
+   border-radius: 10px;
    line-height: 50px;
    color: $font;
+   transition: background .3s;
+   &:hover{
+    background: $tag-bg;
+   }
 
   }
+ }
+
+ .image_block{
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 84px;
+    img{
+        width: calc(50% - 42px);
+        height: fit-content;
+    }
  }
 }

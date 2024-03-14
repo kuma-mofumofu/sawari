@@ -24,9 +24,14 @@
 
     <li class="news--list--item">
       <a href="<?php the_permalink(); ?>">
-
         <div class="image_block">
-          <img src="<?php echo get_theme_file_uri('/img/no_image.png'); ?>" alt="">
+          <?php
+            if (has_post_thumbnail()) :
+              the_post_thumbnail('thumbnail');
+          ?>
+          <?php else : ?>
+              <img src="<?php bloginfo('template_url'); ?>/img/no_image.png" width="150" height="150" alt="アイキャッチがない時の画像" />
+          <?php endif ; ?>
         </div><!-- /.image_block -->
 
         <div class="text_block">

@@ -13,13 +13,22 @@
         <img src="<?php the_field('journal_image'); ?>" >
       </div><!-- /.pdf--image -->
 
-      <div class="pdf--text">
-        <span class="new_icon">NEW</span>
-        <time class="time">
-          <?php echo get_the_date('Y年度 m月'); ?>
-        </time>
-        <p class="number">Vol.<?php the_field('journal_number'); ?></p>
-      </div><!-- /.pdf--text -->
+      <div class="text">
+        <div class="upper">
+          <time class="time">
+            <?php echo get_the_date('Y年度 m月発行'); ?>
+          </time>
+          <span class="new_icon">NEW</span>
+        </div>
+        <div class="lower">
+          <span class="number">Vol.<?php the_field('journal_number'); ?></span>
+          <img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">
+          <span class="file">(<?php the_field('file_size'); ?>)</span>
+        </div>
+
+        <?php the_content(); ?>
+
+      </div>
     </a>
   </li>
 

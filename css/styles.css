@@ -37,6 +37,7 @@
 }
 .coder1 #front-page #keyvisual .text p:not(.catch-copy) a {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
   color: #5AB8CD;
 }
 .coder1 #front-page #keyvisual .musical-notes {
@@ -50,19 +51,15 @@
 }
 .coder1 #front-page #keyvisual .musical-notes div {
   width: 20%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 .coder1 #front-page #keyvisual .musical-notes div img {
   width: 100%;
   transition: opacity 1s;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .coder1 #front-page #keyvisual .musical-notes div img.hidden {
   opacity: 0;
@@ -70,17 +67,6 @@
 }
 .coder1 #front-page #keyvisual .musical-notes :nth-child(2n+1) {
   margin-top: auto;
-}
-@-webkit-keyframes note-up {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: translateY(-50%) rotate(5deg);
-  }
-  100% {
-    transform: rotate(-5deg);
-  }
 }
 @keyframes note-up {
   0% {
@@ -91,17 +77,6 @@
   }
   100% {
     transform: rotate(-5deg);
-  }
-}
-@-webkit-keyframes note-down {
-  0% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: translateY(50%) rotate(-5deg);
-  }
-  100% {
-    transform: rotate(5deg);
   }
 }
 @keyframes note-down {
@@ -117,6 +92,81 @@
 }
 .coder1 #front-page #news {
   margin-bottom: 160px;
+}
+.coder1 #front-page #news ul {
+  margin-bottom: 48px;
+  padding: 0 24px;
+}
+.coder1 #front-page #news ul li:not(:last-child) {
+  border-bottom: 1px dashed #ddd;
+}
+.coder1 #front-page #news ul li {
+  line-height: 24px;
+  padding: 16px 0;
+}
+.coder1 #front-page #news ul li a {
+  color: #3B4043;
+}
+.coder1 #front-page #news ul li a .news_list--headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.coder1 #front-page #news ul li a .news_list--headline p {
+  font-size: 18px;
+}
+.coder1 #front-page #ecclesia {
+  background: #E6EFF4;
+  padding: 50px 24px;
+  margin-bottom: 50px;
+}
+.coder1 #front-page #ecclesia .square {
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 36px;
+}
+.coder1 #front-page #ecclesia .square h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 48px;
+}
+.coder1 #front-page #ecclesia .square h2 span {
+  display: block;
+}
+.coder1 #front-page #ecclesia .square .new_journal {
+  margin-bottom: 36px;
+}
+.coder1 #front-page #ecclesia .square .continuations {
+  margin-bottom: 0;
+}
+.coder1 #front-page #support {
+  max-width: 800px;
+  width: calc(100% - 150px);
+  margin: 0 auto;
+  border: 3px solid #5AB8CD;
+  padding: 64px;
+  border-radius: 20px;
+  display: flex;
+  gap: 48px;
+  color: #3B4043;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.coder1 #front-page #support img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.coder1 #front-page #support .text h2 {
+  font-size: 24px;
+  color: #5AB8CD;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.coder1 #front-page #support .text p {
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 660px) {
   .coder1 #front-page #keyvisual {
@@ -142,7 +192,6 @@
   .coder1 #front-page #keyvisual .keyvisual-cityscape {
     display: block;
     position: absolute;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 194px;
@@ -170,6 +219,9 @@
   }
   .coder1 #front-page #news {
     margin-bottom: 60px;
+  }
+  .coder1 #front-page #support {
+    flex-direction: column;
   }
 }
 
@@ -384,11 +436,9 @@
   }
 }
 
-.coder1 #page-support {
-  line-height: 32px;
-}
 .coder1 #page-support .wrapper #support-top {
   padding: 0 12px;
+  line-height: 32px;
 }
 .coder1 #page-support .wrapper #support-top .support-tags {
   display: flex;
@@ -420,6 +470,7 @@
 .coder1 #page-support .wrapper #kimono-about {
   padding: 0 12px;
   padding-top: 135px;
+  line-height: 32px;
 }
 .coder1 #page-support .wrapper #support-about h3,
 .coder1 #page-support .wrapper #kimono-about h3 {
@@ -479,7 +530,7 @@
 }
 @media (max-width: 800px) {
   .coder1 #page-support .wrapper #support-about,
-.coder1 #page-support .wrapper #kimono-about {
+  .coder1 #page-support .wrapper #kimono-about {
     padding-top: 100px;
   }
 }
@@ -490,6 +541,15 @@
   .coder1 #page-support .wrapper #support-top .support-tags .tag {
     width: calc(50% - 15px);
   }
+}
+
+.coder1 #page-journal .ecclesia {
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1028px;
+}
+.coder1 #page-journal .ecclesia .continuation {
+  margin-bottom: 84px;
 }
 
 .coder1 #page-employment .employment-about {
@@ -553,7 +613,6 @@
 }
 .coder1 #page-employment #shops > div .shop img {
   width: 36%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -756,6 +815,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s;
 }
 #archive .wp-pagenavi .current {
   background: #5AB8CD;
@@ -812,7 +872,7 @@
   border-bottom: 2px solid #5AB8CD;
 }
 #single .news--item p {
-  margin-bottom: 150px;
+  margin-bottom: 64px;
   line-height: 1.6;
 }
 #single .btn {
@@ -825,8 +885,24 @@
 }
 #single .btn a {
   display: block;
+  border-radius: 10px;
   line-height: 50px;
   color: #3B4043;
+  transition: background 0.3s;
+}
+#single .btn a:hover {
+  background: #E6EFF4;
+}
+#single .image_block {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 84px;
+}
+#single .image_block img {
+  width: calc(50% - 42px);
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .coder1 #page-privacy #privacy-top {
@@ -872,6 +948,162 @@
     font-size: 24px;
     margin-bottom: 24px;
   }
+}
+
+.coder1 #page-contact #contact-top {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 24px;
+  margin-bottom: 100px;
+}
+.coder1 #page-contact #contact-top .main-text {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+.coder1 #page-contact #contact-top form {
+  max-width: 900px;
+  text-align: left;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #4e4e4e;
+}
+.coder1 #page-contact #contact-top form dl div {
+  display: flex;
+  margin-bottom: 36px;
+}
+.coder1 #page-contact #contact-top form dl div dt {
+  width: 230px;
+  padding: 20px 0;
+}
+.coder1 #page-contact #contact-top form dl div dd {
+  width: calc(100% - 240px);
+}
+.coder1 #page-contact #contact-top form dl div dd input:not([type=radio], [type=checkbox]), .coder1 #page-contact #contact-top form dl div dd textarea {
+  width: calc(100% - 40px);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  outline: 1px solid #4e4e4e;
+  border: none;
+  resize: none;
+}
+.coder1 #page-contact #contact-top form dl div dd input:not([type=radio], [type=checkbox]):focus, .coder1 #page-contact #contact-top form dl div dd textarea:focus {
+  outline: 2px solid #5AB8CD;
+}
+.coder1 #page-contact #contact-top form dl div dd input[type=radio] {
+  accent-color: #5AB8CD;
+}
+.coder1 #page-contact #contact-top form dl div dd select {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: none;
+  outline: 1px solid #4e4e4e;
+  border: none;
+  position: relative;
+}
+.coder1 #page-contact #contact-top form dl div dd select:focus {
+  outline: 2px solid #5AB8CD;
+}
+.coder1 #page-contact #contact-top form dl .select dd p {
+  position: relative;
+}
+.coder1 #page-contact #contact-top form dl .select dd p::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #3B4043;
+  border-bottom: 2px solid #3B4043;
+  transform: rotate(45deg);
+  right: 24px;
+  top: 20px;
+}
+.coder1 #page-contact #contact-top form dl .privacy dd input {
+  accent-color: #5AB8CD;
+}
+.coder1 #page-contact #contact-top form dl .privacy dd a {
+  display: block;
+  color: #5AB8CD;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.coder1 #page-contact #contact-top form dl .privacy dd a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.coder1 #page-contact #contact-top form > p {
+  text-align: center;
+}
+.coder1 #page-contact #contact-top form > p input {
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 12px 24px;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #4e4e4e;
+  transition: background 0.3s;
+}
+.coder1 #page-contact #contact-top form > p input:hover {
+  background: #E6EFF4;
+}
+.coder1 #page-contact #contact-top form > p .wpcf7-spinner {
+  display: none;
+}
+@media (max-width: 660px) {
+  .coder1 #page-contact #contact-top form dl div {
+    flex-direction: column;
+  }
+  .coder1 #page-contact #contact-top form dl div dd {
+    width: 100%;
+  }
+}
+
+.coder1 #page-ecclesia section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 36px;
+}
+.coder1 #page-ecclesia #latest {
+  margin-bottom: 64px;
+  padding: 0 24px;
+  padding-top: 48px;
+}
+.coder1 #page-ecclesia #backnumber {
+  background: #E6EFF4;
+  margin-bottom: 100px;
+  padding: 48px 24px 60px;
+}
+.coder1 #page-ecclesia #backnumber ul {
+  max-width: 720px;
+}
+.coder1 #page-ecclesia #backnumber .btn a {
+  display: block;
+  color: #fff;
+  background: #5AB8CD;
+  width: 360px;
+  text-align: center;
+  margin: 0 auto 60px;
+  padding: 14px 0;
+  font-size: 20px;
+}
+.coder1 #page-ecclesia #backnumber .btn a:hover {
+  text-decoration: underline;
+}
+
+.coder1 #page-journal .ecclesia {
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1028px;
+}
+.coder1 #page-journal .ecclesia .continuation {
+  margin-bottom: 84px;
 }
 
 .coder1 header {
@@ -929,6 +1161,9 @@
   padding-top: 10px;
   filter: drop-shadow(1px 1px 2px #ddd) drop-shadow(-1px -1px 2px #ddd);
   transition: background-color 0.3s;
+}
+.coder1 header .inner nav .upper .tags .tag img {
+  width: 40px;
 }
 .coder1 header .inner nav .upper .tags .tag:hover {
   background-color: rgb(210, 219, 224);
@@ -1028,7 +1263,6 @@
   }
   .coder1 header .inner nav .upper .tel {
     margin: 0 auto;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -1343,6 +1577,7 @@
 .coder1 .button:hover {
   border-radius: 10px 0 10px 0;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 .coder1 .continuation {
   display: block;
@@ -1351,17 +1586,16 @@
   width: 212px;
   text-align: center;
   border: 1px solid #5AB8CD;
-  color: #707070;
+  color: #3B4043;
+  border-radius: 0 12px 0 12px;
+  transition: border-radius 0.3s, background 0.3s;
 }
 .coder1 .continuation .color {
   color: #5AB8CD;
 }
-.coder1 .continuation span:not(.color) {
-  transition: transform 0.3s;
-  display: inline-block;
-}
-.coder1 .continuation:hover span:not(.color) {
-  transform: translateX(6px);
+.coder1 .continuation:hover {
+  background: #E6EFF4;
+  border-radius: 12px 0 12px 0;
 }
 .coder1 h3 {
   text-align: center;
@@ -1389,6 +1623,8 @@
 .coder1 .lower-keyvisual {
   position: relative;
   overflow-x: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .coder1 .lower-keyvisual .sp {
   display: none;
@@ -1423,6 +1659,67 @@
 }
 .coder1 .access:hover span {
   transform: translateX(6px);
+}
+.coder1 .ecclesia--list {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+.coder1 .ecclesia--list .style {
+  display: block;
+  width: 200px;
+  margin: 0;
+  height: 0;
+  padding: 0;
+}
+.coder1 .pdf a {
+  color: #3B4043;
+}
+.coder1 .pdf a .text {
+  line-height: 24px;
+}
+.coder1 .pdf a .text .upper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.coder1 .pdf a .text .upper time::before {
+  display: none;
+}
+.coder1 .pdf a .text .upper .new_icon {
+  color: #fff;
+  background: #5AB8CD;
+  font-size: 12px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 16px;
+  width: 32px;
+}
+.coder1 .pdf a .text .lower {
+  display: flex;
+  gap: 8px;
+}
+.coder1 .pdf a .text .lower span {
+  display: block;
+}
+.coder1 .pdf a .text .lower .number {
+  font-size: 24px;
+  color: #5AB8CD;
+  text-decoration: underline;
+}
+.coder1 .pdf a .text .lower img {
+  width: 20px;
+}
+.coder1 .pdf a .text p {
+  padding-top: 24px;
+  line-height: 24px;
 }
 @media (max-width: 800px) {
   .coder1 {
@@ -1460,6 +1757,13 @@
   .coder1 .lower-keyvisual .sp {
     display: block;
     width: 100%;
+  }
+  .coder1 .ecclesia--list {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .coder1 .ecclesia--list .style {
+    display: none;
   }
 }
 
@@ -1786,5 +2090,24 @@
   }
   .coder1 .businesses #businesses-flow ul li .text {
     width: calc(100% - 134px);
+  }
+}
+
+.new_journal {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.new_journal ul li a {
+  display: flex;
+  gap: 36px;
+}
+@media (max-width: 660px) {
+  .new_journal ul li a {
+    flex-direction: column;
+    align-items: center;
+  }
+  .new_journal ul li a .text .upper,
+  .new_journal ul li a .text .lower {
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */

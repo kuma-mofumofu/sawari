@@ -25,7 +25,6 @@
 
 
       <?php get_template_part("parts/business");?>
-      <?php get_template_part("parts/middle");?>
 
 
       <div class="wrapper">
@@ -45,45 +44,60 @@
             ?>
 
             <li class="news_list">
+              <a href="<?php the_permalink(); ?>">
 
-
-              <div class="news_list--time">
-                <span class="genre-icon">ジャンル</span>
+              <div class="news_list--headline">
+                <p class="news_list--title"><?php echo the_title(); ?></p>
                 <time class="time">
                   <?php echo the_date('Y年度 m月'); ?>
                 </time>
               </div><!-- /.news_list--time -->
 
-              <p class="news_list--title"><?php echo the_title(); ?></p>
 
               <div class="news_list--content">
                 <p>
-                  <?php the_content();?>
+                <?php the_excerpt(); ?>
 
-                  <?php echo mb_substr(get_the_excerpt(), 0, 60); ?>
                 </p>
               </div><!-- /.news_list--content -->
-
-
+              </a>
             </li><!-- /.news_list -->
             <?php
               wp_reset_postdata();
               endforeach;
             ?>
           </ul>
-          <a href="/news/" class="continuation">続きを見る<span>→</span></a>
+          <a href="/news/" class="continuation">続きを見る</a>
         </section>
 
+      </div>
+
         <section id="ecclesia">
-          <h2 class="sub_title">エクレーシア最新号</h2>
-          <?php get_template_part("parts/new_journal");?>
+          <div class="square">
+            <h2 class="sub_title">
+              <img src="<?= get_theme_file_uri(); ?>/img/gathering.png" alt="">
+              <span>エクレーシア最新号</span>
+            </h2>
 
-          <div class="btn">
-            <a href="<?php home_url()?>/ecclesia/">エクレーシアについて<span>→</span></a>
+            <?php get_template_part("parts/new_journal");?>
+
+
+
+            <div class="continuations">
+              <a href="<?php home_url()?>/ecclesia/" class="continuation">エクレーシアについて</a>
+              <a href="<?php home_url()?>/journal/" class="continuation">バックナンバー</a>
+            </div>
+
           </div>
-
-          <div class="btn">
-            <a href="<?php home_url()?>/journal/">バックナンバー<span>→</span></a>
+        </section>
+        
+      <div class="wrapper">
+        <section id="support">
+          <img src="<?= get_theme_file_uri(); ?>/img/love-icon.png" alt="">
+          <div class="text">
+            <h2>支援のお願い</h2>
+            <p>社会福祉法人サワリでは、法人理念と現場理念にご賛同いただける個人・法人・団体など全国の皆様からの寄付金の受付を行っております。</p>
+            <a href="/support/" class="continuation">詳細を見る</a>
           </div>
         </section>
       </div>

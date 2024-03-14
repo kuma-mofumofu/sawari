@@ -78,7 +78,7 @@
       'post_type' => 'journal',
       'posts_per_page' => 3,
       'no_found_rows' => true,
-      'offset'=> 2,
+      'offset'=> 1,
     );
     $my_posts = get_posts($args);
     return $my_posts;

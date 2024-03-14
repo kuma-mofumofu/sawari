@@ -1,7 +1,7 @@
 
 <div class="contact">
     <p class="pc">体験や見学、サービス利用の相談はこちらから</p>
-    <p class="sp">お問合せはこちらから</p>
+    <p class="sp">お問い合わせはこちらから</p>
     <div class="lower">
         <div class="tel">
         <a href="tel:072-280-0803">

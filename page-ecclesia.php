@@ -28,14 +28,14 @@
       </div>
     </section>
 
-    <section>
+    <section id="latest">
       <h2>最新号</h2>
       <?php get_template_part("parts/new_journal");?>
     </section>
 
-    <section>
+    <section id="backnumber">
       <h2>バックナンバー</h2>
-      <ul>
+      <ul class="ecclesia--list">
         <?php
           $ecclesia_posts = get_ecclesia_posts();
 
@@ -43,29 +43,36 @@
             setup_postdata( $post );
         ?>
 
-        <li class="pdf">
-          <a href="<?php the_field('journal_pdf');?>" target="_blank">
-            <div class="pdf--image">
-              <img src="<?php the_field('journal_image'); ?>" >
-            </div><!-- /.pdf--image -->
-
-            <div class="pdf--text">
-              <time class="time">
-                <?php echo get_the_date('Y年度 m月'); ?>
-              </time>
-              <p class="number">Vol.<?php the_field('journal_number'); ?></p>
-            </div><!-- /.pdf--text -->
-
-          </a>
-        </li><!-- /.pdf -->
+          <li class="pdf">
+            <a href="<?php the_field('journal_pdf');?>" target="_blank">
+              <div class="pdf--image">
+                <img src="<?php the_field('journal_image'); ?>" >
+              </div><!-- /.pdf--image -->
+    
+              <div class="text">
+                <div class="upper">
+                  <time class="time">
+                    <?php echo get_the_date('Y年度 m月'); ?>発行
+                  </time>
+                </div>
+                <div class="lower">
+                  <span class="number">Vol.<?php the_field('journal_number'); ?></span>
+                  <img src="<?= get_theme_file_uri(); ?>/img/pdf_icon.png" alt="">
+                  <span class="file">(<?php the_field('file_size'); ?>)</span>
+                </div>
+              </div><!-- /.pdf--text -->
+            </a>
+          </li><!-- /.pdf -->
 
         <?php
           endforeach;
         ?>
+
+        <li class="style"></li>
       </ul>
 
       <div class="btn">
-        <a href="<?php home_url()?>/journal/">もっと見る></a>
+        <a href="<?php home_url()?>/journal/">もっと見る</a>
       </div>
     </section>
 

@@ -6,7 +6,7 @@
     <title>社会福祉法人サワリ</title>
     <link rel="stylesheet" href="<?= get_theme_file_uri();?>/css/reset.css">    
     <link rel="stylesheet" href="<?= get_theme_file_uri();?>/css/styles.css">
-    <link rel="icon" href="<?= get_theme_file_uri(); ?>/img/sawari.png">
+    <link rel="icon" href="<?= get_theme_file_uri(); ?>/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
