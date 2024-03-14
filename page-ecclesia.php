@@ -59,10 +59,9 @@
           </a>
         </li><!-- /.pdf -->
 
-        <?php
-          endforeach;
-        ?>
+
       </ul>
+
 
       <div class="btn">
         <a href="<?php home_url()?>/journal/">もっと見る></a>

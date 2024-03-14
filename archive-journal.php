@@ -17,9 +17,20 @@
       <ul class="ecclesia--list">
 
         <?php
-          if(have_posts()):
-            while(have_posts($post)):
-              the_post();
+          $paged = get_query_var('paged') ?: 1;
+
+          $journal_query = new WP_Query(
+            array(
+              'post_type' => 'post',
+              ''
+              'posts_per_page' => 30,
+              'paged' => $paged,
+            )
+          );
+
+          if($journal_query->have_posts()):
+            while($journal_query->have_posts($post)):
+              $journal_query->the_post();
             setup_postdata($post);
         ?>
 
@@ -45,6 +56,14 @@
 
       </ul><!-- /.ecclesia--list -->
     </div><!-- /.ecclesia -->
+
+    <?php
+      if ( function_exists( 'pagination' ) ) :
+        pagination( $journal_query->max_num_pages, $paged );
+      endif;
+
+      wp_reset_postdata();
+    ?>
 
 
 

@@ -163,5 +163,56 @@
     endif;
   }
 
+  /* ===============================================
+  # ページネーション
+  =============================================== */
+  function pagination( $pages, $paged, $range = 2, $show_only = false ) {
+    $pages = ( int ) $pages;
+    $paged = $paged ?: 1;
+
+    $text_first   = "|<<";
+    $text_before  = "<<";
+    $text_next    = ">>";
+    $text_last    = ">>|";
+
+    if ( $show_only && $pages === 1 ) {
+      echo '<div class="pagination"><span class="current pager">1</span></div>';
+      return;
+    }
+
+    if ( $pages === 1 ) return;
+
+    if ( 1 !== $pages ) {
+      echo '<div class="pagination">';
+
+      if ( $paged > $range + 1 ) {
+        echo '<a href="', get_pagenum_link(1) ,'" class="first">', $text_first ,'</a>';
+      }
+
+      if ( $paged > 1 ) {
+        echo '<a href="', get_pagenum_link( $paged - 1 ) ,'" class="prev">', $text_before ,'</a>';
+      }
+
+      for ( $i = 1; $i <= $pages; $i++ ) {
+        if ( $i <= $paged + $range && $i >= $paged - $range ) {
+          if ( $paged === $i ) {
+            echo '<span class="current pager">', $i ,'</span>';
+          } else {
+            echo '<a href="', get_pagenum_link( $i ) ,'" class="pager">', $i ,'</a>';
+          }
+        }
+      }
+
+      if ( $paged < $pages ) {
+        echo '<a href="', get_pagenum_link( $paged + 1 ) ,'" class="next">', $text_next ,'</a>';
+      }
+
+      if ( $paged + $range < $pages ) {
+        echo '<a href="', get_pagenum_link( $pages ) ,'" class="last">', $text_last ,'</a>';
+      }
+
+      echo '</div>';
+    }
+  }
 
 ?>
