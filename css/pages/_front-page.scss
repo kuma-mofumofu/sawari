@@ -179,21 +179,6 @@
           line-height: 30px;
           margin-bottom: 20px;
         }
-        .access{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto;
-          width: 212px;
-          height: 36px;
-          border: 1px solid $tag-font;
-          border-radius:0 12px 0 12px;
-          transition: border-radius .3s,background .3s;
-          &:hover{
-            border-radius: 12px 0 12px 0;
-            background: $tag-bg;
-          }
-        }
       }
     }
 
