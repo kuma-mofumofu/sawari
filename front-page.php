@@ -97,7 +97,7 @@
           <div class="text">
             <h2>支援のお願い</h2>
             <p>社会福祉法人サワリでは、法人理念と現場理念にご賛同いただける個人・法人・団体など全国の皆様からの寄付金の受付を行っております。</p>
-            <a href="/support/" class="access">詳細を見る<span>→</span></a>
+            <a href="/support/" class="continuation">詳細を見る</a>
           </div>
         </section>
       </div>
