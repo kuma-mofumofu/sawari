@@ -64,7 +64,7 @@
 
       </ul><!-- /.ecclesia--list -->
 
-      <a class="continuation">機関紙一覧へ戻る</a>
+      <a class="continuation" href="/ecclesia/">機関紙一覧へ戻る</a>
     </div><!-- /.ecclesia -->
 
 
