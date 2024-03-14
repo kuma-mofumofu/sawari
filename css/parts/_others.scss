@@ -155,21 +155,16 @@
       text-align: center;
       border: 1px solid $tag-font;
       color: $font;
-      transition: background .3s;
+      border-radius:0 12px 0 12px;
+      transition: border-radius .3s,background .3s;
   
       .color{
         color: $tag-font;
       }
   
-      span:not(.color){
-        transition: transform .3s;
-        display: inline-block;
-      }
       &:hover{
         background: $tag-bg;
-        span:not(.color){
-          transform: translateX(6px);
-        }
+        border-radius: 12px 0 12px 0;
       }
     }
   
