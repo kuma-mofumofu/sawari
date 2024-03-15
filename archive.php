@@ -16,11 +16,26 @@
 
   <div class="news">
   <ul class="news--list">
+
     <?php
-      if(have_posts()):
-        while(have_posts()):
-          the_post();
+      $paged = get_query_var('paged') ?: 1;
+
+      $news_query = new WP_Query(
+        array(
+          'post_type' => 'post',
+          'posts_per_page' => 10,
+          'paged' => $paged,
+        )
+      );
+
+      var_dump($news_query);
+
+      if($news_query->have_posts()):
+        while($news_query->have_posts()):
+          $news_query->the_post();
+          setup_postdata($post);
     ?>
+
 
     <li class="news--list--item">
       <a href="<?php the_permalink(); ?>">
@@ -55,10 +70,15 @@
       endif;
     ?>
     </ul><!-- /.news--list -->
+
+    <?php
+      if(function_exists('pagination')):
+        pagination($news_query->max_num_pages,$paged);
+      endif;
+
+      wp_reset_postdata();
+    ?>
   </div><!-- /.news -->
-
-  <?php wp_pagenavi(); ?>
-
 
   <?php get_template_part('parts/continuations'); ?>  
   <?php get_template_part('parts/businesses'); ?>
