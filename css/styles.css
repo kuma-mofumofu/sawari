@@ -1106,6 +1106,22 @@
   margin-bottom: 84px;
 }
 
+#not-found {
+  text-align: center;
+  padding-top: 64px;
+}
+#not-found h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+#not-found p {
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+#not-found .continuation {
+  margin-bottom: 64px;
+}
+
 .coder1 header {
   position: fixed;
   padding: 0 20px;
