@@ -1066,8 +1066,14 @@
   margin-bottom: 100px;
   padding: 48px 24px 60px;
 }
-.coder1 #page-ecclesia #backnumber ul {
+.coder1 #page-ecclesia #backnumber .ecclesia--list {
   max-width: 720px;
+  margin-bottom: 0;
+}
+@media (max-width: 660px) {
+  .coder1 #page-ecclesia #backnumber .ecclesia--list {
+    margin-bottom: 64px;
+  }
 }
 .coder1 #page-ecclesia #backnumber .btn a {
   display: block;
