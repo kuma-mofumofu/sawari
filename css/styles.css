@@ -379,7 +379,8 @@
   padding-bottom: 150px;
 }
 .coder1 #page-company #company-staffs .white-inner {
-  padding-top: 60px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .coder1 #page-company #company-staffs .white-inner h3 {
   color: #5AB8CD;
@@ -875,23 +876,8 @@
   margin-bottom: 64px;
   line-height: 1.6;
 }
-#single .btn {
-  width: 250px;
-  height: 50px;
-  border: solid 1px #5AB8CD;
-  margin: 0 auto 100px;
-  text-align: center;
-  border-radius: 10px;
-}
-#single .btn a {
-  display: block;
-  border-radius: 10px;
-  line-height: 50px;
-  color: #3B4043;
-  transition: background 0.3s;
-}
-#single .btn a:hover {
-  background: #E6EFF4;
+#single .continuation {
+  margin-bottom: 84px;
 }
 #single .image_block {
   margin-bottom: 64px;
