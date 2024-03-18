@@ -1,0 +1,61 @@
+
+
+/* ===============================================
+# お知らせ（シングル）
+=============================================== */
+#single{
+ //* 共通
+
+
+ //* お知らせ（シングル）
+ .news{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  a{
+   color: $font;
+  }
+ }
+
+ .news--item{
+  max-width: 800px;
+  margin: 0 auto;
+
+  .time{
+   display: inline-block;
+   margin-bottom: .5rem;
+  }
+
+  .news_title{
+   font-size:24px;
+   font-weight: bold;
+   text-align: left;
+   padding-bottom: .5rem;
+   margin-bottom: 1rem;
+   display: inline-block;
+   border-bottom: 2px solid $tag-font;
+  }
+
+  p{
+   margin-bottom: 64px;
+   line-height: 1.6;
+  }
+ }
+
+
+ //* ボタン「一覧に戻る」
+ .continuation{
+    margin-bottom: 84px;
+ }
+
+ .image_block{
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 84px;
+    img{
+        width: calc(50% - 42px);
+        height: fit-content;
+    }
+ }
+}
