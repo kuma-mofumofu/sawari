@@ -25,7 +25,8 @@
           $journal_query = new WP_Query(
             array(
               'post_type' => 'post',
-              'posts_per_page' => 30,
+              'category_name' => 'journal',
+              'posts_per_page' => 10,
               'paged' => $paged,
             )
           );

@@ -101,7 +101,7 @@
  # 管理バーの非表示
  =============================================== */
  //* htmlタグのmargin-top:32px !important;の消去
- add_filter('show_admin_bar','__return_false');
+//  add_filter('show_admin_bar','__return_false');
 
  /* ===============================================
  # 管理画面メニュー非表示
