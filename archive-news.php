@@ -34,7 +34,8 @@
             $news_query->the_post();
             setup_postdata($post);
 
-            var_dump($news_query);
+            // var_dump($news_query);
+            
       ?>
 
       <li class="news--list--item">

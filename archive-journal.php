@@ -49,9 +49,9 @@
                 <time class="time">
                   <?php echo get_the_date('Y年度 m月発行'); ?>
                 </time>
-                <?php if($counter == 0): ?>
+                <!-- <?php if($counter == 0): ?> -->
                   <span class="new_icon">NEW</span>
-                <?php endif; ?>
+                <!-- <?php endif; ?> -->
                 
               </div>
               <div class="lower">
@@ -65,20 +65,20 @@
         </li>
 
         <?php
-            $counter++;
+            // $counter++;
             endwhile;
           endif;
         ?>
+        <!-- <li class="style"></li>
         <li class="style"></li>
-        <li class="style"></li>
-        <li class="style"></li>
+        <li class="style"></li> -->
 
       </ul><!-- /.ecclesia--list -->
 
       <?php
-        if(function_exists('pagination')):
-          pagination($journal_query->max_num_pages,$paged);
-        endif;
+        // if(function_exists('pagination')):
+        //   pagination($journal_query->max_num_pages,$paged);
+        // endif;
 
         wp_reset_postdata();
       ?>
