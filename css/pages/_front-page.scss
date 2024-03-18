@@ -1,0 +1,247 @@
+
+@import "../global/variables";
+
+.coder1{
+  #front-page{
+    #keyvisual{
+      margin: 0 auto 50px;
+      max-width: 1140px;
+      position: relative;
+      & > img{
+        width: 100%;
+        -webkit-user-drag: none;
+      }
+      .keyvisual-sp{
+        display: none;
+      }
+      .keyvisual-staff{
+        display: none;
+      }
+      .keyvisual-cityscape{
+        display: none;
+      }
+      .text{
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        z-index: 5;
+        span{
+          color: $tag-font;
+        }
+        .catch-copy{
+          font-size: min(4vw,36px);
+          font-weight: bold;
+          margin-bottom: .6em;
+        }
+        p:not(.catch-copy){
+          font-size: min(2.5vw,24px);
+          line-height: 2em;
+          a{
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            color: $tag-font;
+          }
+        }
+      }
+      .musical-notes{
+        position: absolute;
+        width: 42.5%;
+        height: 36%;
+        right: 5%;
+        top: 8%;
+        display: flex;
+        justify-content: space-between;
+        div{
+          width: 20%;
+          height: fit-content;
+          img{
+            width: 100%;
+            transition: opacity 1s;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            &.hidden{
+              opacity: 0;
+              display: block;
+              
+            }
+          }
+        }
+        :nth-child(2n+1){
+          margin-top: auto;
+        }
+      }
+    }
+
+    @keyframes note-up{
+      0%{
+        transform: rotate(-5deg);
+      }
+      50%{
+        transform: translateY(-50%) rotate(5deg);
+      }
+      100%{
+        transform: rotate(-5deg);
+      }
+    }
+
+    @keyframes note-down{
+      0%{
+        transform: rotate(5deg);
+      }
+      50%{
+        transform: translateY(50%) rotate(-5deg);
+      }
+      100%{
+        transform: rotate(5deg);
+      }
+    }
+
+
+    #news{
+      margin-bottom: 160px;
+      ul{
+        margin-bottom: 48px;
+        padding: 0 24px;
+        li:not(:last-child){
+          border-bottom: 1px dashed #ddd;
+        }
+        li{
+          line-height: 24px;
+          padding: 16px 0;
+          a{
+            color: $font;
+            .news_list--headline{
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 8px;
+              p{
+                font-size: 18px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    #ecclesia{
+      background: $tag-bg;
+      padding: 50px 24px;
+      margin-bottom: 50px;
+      .square{
+        background: #fff;
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 24px;
+        padding: 36px ;
+        h2{
+          text-align: center;
+          font-size: 22px;
+          margin-bottom: 48px;
+          span{
+            display: block;
+          }
+        }
+        .new_journal{
+          margin-bottom: 36px;
+        }
+
+        .continuations{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    #support{
+      max-width: 800px;
+      width: calc(100% - 48px);
+      margin: 0 auto;
+      border: 3px solid $tag-font;
+      padding: 64px;
+      border-radius: 20px;
+      display: flex;
+      gap: 48px;
+      color: $font;
+      margin-bottom: 100px;
+      align-items: center;
+      box-sizing: border-box;
+      img{
+        height: fit-content;
+      }
+      .text{
+        h2{
+          font-size: 24px;
+          color: $tag-font;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        p{
+          line-height: 30px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+
+    @media(max-width:660px){
+      #keyvisual{
+        height: calc(100dvh - 100px);
+        background-color: $tag-bg;
+        width: calc(100vw - 24px);
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 10px solid #F1F6F9;
+        border-radius: 24px;
+        margin-bottom: 32px;
+        .keyvisual-pc{
+          display: none;
+        }
+        .keyvisual-staff{
+          display: block;
+          position: absolute;
+          left: -5px;
+          bottom: -10px;
+          z-index: 4;
+        }
+        .keyvisual-cityscape{
+          display: block;
+          position: absolute;
+          width: fit-content;
+          height: 194px;
+          right: -22px;
+          bottom: 7dvh;
+        }
+        .musical-notes{
+          display: none;
+        }
+        .text{
+          top: 7dvh;
+          left: 0;
+          width: calc(100% - 64px);
+          padding: 0 32px;
+          .catch-copy{
+            font-size: max(5dvh, 24px);
+            margin-bottom: 5dvh;
+          }
+
+          p:not(.catch-copy){
+            font-size: max(3dvh,16px);
+            br{
+              display: none;
+            }
+          }
+        }
+      }
+
+      #news{
+        margin-bottom: 60px;
+      }
+
+      #support{
+        flex-direction: column;
+      }
+    }
+  }
+
+}
