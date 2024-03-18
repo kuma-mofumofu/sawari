@@ -41,11 +41,9 @@
     </div><!-- /.news--item -->
   </div><!-- /.news -->
 
-  <div class="btn">
-    <a href="<?php home_url()?>/news/">
+    <a href="<?php home_url()?>/news/" class="continuation">
       一覧に戻る
     </a>
-  </div>
 
   </main>
 <?php get_footer(); ?>

@@ -44,25 +44,8 @@
 
 
  //* ボタン「一覧に戻る」
- .btn{
-  width: 250px;
-  height: 50px;
-  border: solid 1px $tag-font;
-  margin: 0 auto 100px;
-  text-align: center;
-  border-radius: 10px;
-
-  a{
-   display: block;
-   border-radius: 10px;
-   line-height: 50px;
-   color: $font;
-   transition: background .3s;
-   &:hover{
-    background: $tag-bg;
-   }
-
-  }
+ .continuation{
+    margin-bottom: 84px;
  }
 
  .image_block{

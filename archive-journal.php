@@ -83,7 +83,6 @@
         wp_reset_postdata();
       ?>
 
-      <a class="continuation" href="/ecclesia/">機関紙一覧へ戻る</a>
     </div><!-- /.ecclesia -->
 
 

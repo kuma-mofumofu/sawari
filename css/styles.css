@@ -143,7 +143,7 @@
 }
 .coder1 #front-page #support {
   max-width: 800px;
-  width: calc(100% - 150px);
+  width: calc(100% - 48px);
   margin: 0 auto;
   border: 3px solid #5AB8CD;
   padding: 64px;
@@ -153,6 +153,7 @@
   color: #3B4043;
   margin-bottom: 100px;
   align-items: center;
+  box-sizing: border-box;
 }
 .coder1 #front-page #support img {
   height: -moz-fit-content;
@@ -379,7 +380,8 @@
   padding-bottom: 150px;
 }
 .coder1 #page-company #company-staffs .white-inner {
-  padding-top: 60px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .coder1 #page-company #company-staffs .white-inner h3 {
   color: #5AB8CD;
@@ -437,7 +439,7 @@
 }
 
 .coder1 #page-support .wrapper #support-top {
-  padding: 0 12px;
+  padding: 0 24px;
   line-height: 32px;
 }
 .coder1 #page-support .wrapper #support-top .support-tags {
@@ -449,7 +451,7 @@
   width: calc(50% - 40px);
   height: 130px;
   background: #fff;
-  border: 1px solid #5AB8CD;
+  border: 2px solid #5AB8CD;
   border-radius: 24px;
   box-sizing: border-box;
   display: flex;
@@ -468,7 +470,7 @@
 }
 .coder1 #page-support .wrapper #support-about,
 .coder1 #page-support .wrapper #kimono-about {
-  padding: 0 12px;
+  padding: 0 24px;
   padding-top: 135px;
   line-height: 32px;
 }
@@ -586,7 +588,7 @@
   border-radius: 2px;
 }
 .coder1 #page-employment #shops {
-  padding: 0 12px;
+  padding: 0 24px;
   margin-bottom: 80px;
 }
 .coder1 #page-employment #shops h4 {
@@ -669,7 +671,7 @@
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: 100px;
-  width: calc(100% - 24px);
+  width: calc(100% - 48px);
 }
 .coder1 #page-living #q-and-a .q-and-a h5 {
   background-color: #5AB8CD;
@@ -720,8 +722,8 @@
 @media (max-width: 660px) {
   .coder1 #page-living #q-and-a p {
     text-align: left;
-    padding: 0 12px;
-    width: calc(100% - 24px);
+    padding: 0 24px;
+    width: calc(100% - 48px);
   }
   .coder1 #page-living #q-and-a .q-and-a dl {
     width: 100%;
@@ -875,23 +877,8 @@
   margin-bottom: 64px;
   line-height: 1.6;
 }
-#single .btn {
-  width: 250px;
-  height: 50px;
-  border: solid 1px #5AB8CD;
-  margin: 0 auto 100px;
-  text-align: center;
-  border-radius: 10px;
-}
-#single .btn a {
-  display: block;
-  border-radius: 10px;
-  line-height: 50px;
-  color: #3B4043;
-  transition: background 0.3s;
-}
-#single .btn a:hover {
-  background: #E6EFF4;
+#single .continuation {
+  margin-bottom: 84px;
 }
 #single .image_block {
   margin-bottom: 64px;
@@ -906,7 +893,7 @@
 }
 
 .coder1 #page-privacy #privacy-top {
-  padding: 0 12px;
+  padding: 0 24px;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -1080,8 +1067,14 @@
   margin-bottom: 100px;
   padding: 48px 24px 60px;
 }
-.coder1 #page-ecclesia #backnumber ul {
+.coder1 #page-ecclesia #backnumber .ecclesia--list {
   max-width: 720px;
+  margin-bottom: 0;
+}
+@media (max-width: 660px) {
+  .coder1 #page-ecclesia #backnumber .ecclesia--list {
+    margin-bottom: 64px;
+  }
 }
 .coder1 #page-ecclesia #backnumber .btn a {
   display: block;
@@ -1104,6 +1097,22 @@
 }
 .coder1 #page-journal .ecclesia .continuation {
   margin-bottom: 84px;
+}
+
+#not-found {
+  text-align: center;
+  padding-top: 64px;
+}
+#not-found h2 {
+  font-size: 36px;
+  margin-bottom: 36px;
+}
+#not-found p {
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+#not-found .continuation {
+  margin-bottom: 64px;
 }
 
 .coder1 header {
@@ -1611,7 +1620,7 @@
   padding: 0 24px;
 }
 .coder1 .directory {
-  padding: 70px 12px;
+  padding: 70px 24px;
   font-size: 18px;
 }
 .coder1 .directory a {
@@ -1774,7 +1783,7 @@
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 .coder1 #business .business-items a {
   display: block;
@@ -1847,7 +1856,7 @@
 .coder1 .contact {
   background-color: rgba(255, 255, 255, 0.8);
   max-width: 800px;
-  width: calc(100% - 24px);
+  width: calc(100% - 48px);
   border: 1px solid #5AB8CD;
   padding: 24px 0 40px;
   margin: 0 auto;
@@ -1938,7 +1947,7 @@
   margin-bottom: 36px;
 }
 .coder1 .businesses .businesses-images {
-  padding: 0 12px;
+  padding: 0 24px;
 }
 .coder1 .businesses .businesses-images .inner {
   display: flex;
@@ -2003,7 +2012,7 @@
 }
 .coder1 .businesses .businesses-inner {
   max-width: 820px;
-  width: calc(100% - 24px);
+  width: calc(100% - 48px);
   margin: 0 auto;
 }
 .coder1 .businesses .businesses-inner dl:not(.employment-dl) {
@@ -2030,7 +2039,7 @@
 }
 .coder1 .businesses .about-outer {
   max-width: 670px;
-  padding: 0 12px;
+  padding: 0 24px;
   margin: 0 auto;
   line-height: 32px;
   margin-bottom: 48px;

@@ -18,8 +18,12 @@
             background: $tag-bg;
             margin-bottom: 100px;
             padding: 48px 24px 60px;
-            ul{
+            .ecclesia--list{
                 max-width: 720px;
+                margin-bottom: 0;
+                @media (max-width: 660px){
+                    margin-bottom: 64px;
+                }
             }
             .btn{
                 a{
