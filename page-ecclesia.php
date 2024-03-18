@@ -68,8 +68,8 @@
           endforeach;
         ?>
 
-        <!-- <li class="style"></li>
-        <li class="style"></li> -->
+        <li class="style"></li>
+        <li class="style"></li>
       </ul>
 
       <div class="btn">
