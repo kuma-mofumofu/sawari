@@ -167,7 +167,7 @@
   # ページネーション
   =============================================== */
   function pagination( $pages, $paged, $range = 2, $show_only = false ) {
-
+    global $paged;
     $pages = ( int ) $pages;    //float型で渡ってくるので明示的に int型 へ
     $paged = $paged ?: 1;       //get_query_var('paged')をそのまま投げても大丈夫なように
 

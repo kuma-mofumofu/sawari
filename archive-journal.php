@@ -24,12 +24,20 @@
 
           $journal_query = new WP_Query(
             array(
-              'post_type' => 'post',
-              'category_name' => 'journal',
+              'post_type' => 'journal',
+              'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'slug',
+                    'terms' => 'journal'
+                )
+              ),
               'posts_per_page' => 10,
               'paged' => $paged,
             )
           );
+
+          // var_dump($journal_query);
 
           if($journal_query->have_posts()):
             while($journal_query->have_posts($post)):
@@ -49,9 +57,7 @@
                 <time class="time">
                   <?php echo get_the_date('Y年度 m月発行'); ?>
                 </time>
-                <?php if($counter == 0): ?>
                   <span class="new_icon">NEW</span>
-                <?php endif; ?>
                 
               </div>
               <div class="lower">
@@ -65,25 +71,26 @@
         </li>
 
         <?php
-            $counter++;
             endwhile;
           endif;
         ?>
-        <li class="style"></li>
-        <li class="style"></li>
-        <li class="style"></li>
+
 
       </ul><!-- /.ecclesia--list -->
 
       <?php
-        // if(function_exists('pagination')):
-        //   pagination($journal_query->max_num_pages,$paged);
-        // endif;
+        if(function_exists('pagination')):
+          pagination($journal_query->max_num_pages,$paged);
+        endif;
 
         wp_reset_postdata();
       ?>
 
     </div><!-- /.ecclesia -->
+
+    <div>
+      <a href="#">△</a>
+    </div>
 
 
 
