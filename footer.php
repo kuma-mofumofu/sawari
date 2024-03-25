@@ -22,11 +22,11 @@
             <div class="businesses">
               <h3>事業内容</h3>
               <ul>
-                <li><a href="/employment/">就労継続支援B型</a></li>
-                <li><a href="/living/">共同生活援助</a></li>
-                <li><a href="/nursing/">デイサービス<br>
+                <li><a href="/welfare01/">就労継続支援B型</a></li>
+                <li><a href="/welfare02/">共同生活援助</a></li>
+                <li><a href="/welfare03/">デイサービス<br>
                   └共生型生活介護</a></li>
-                <li><a href="/consultation/">特定相談支援</a></li>
+                <li><a href="/welfare04/">特定相談支援</a></li>
               </ul>
             </div>
             <div class="buttons">
