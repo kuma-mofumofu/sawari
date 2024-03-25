@@ -1,155 +1,139 @@
 <?php get_header(); ?>
 
-    <main id="page-nursing" class="businesses">
+    <main id="page-living" class="businesses">
       <div class="directory">
         <div class="inner">
           <a href="/">ホーム</a>
           <span>&gt;</span>
-          <span>デイサービス/共生型生活介護</span>
+          <span>共同生活援助(グループホーム)</span>
         </div>
       </div>
 
-      <section id="nursing-top" >
+      <section id="living-top" >
         <div class="outer">
-          <h2 class="lower-h2">デイサービス/共生型生活介護</h2>
+          <h2 class="lower-h2">共同生活援助(グループホーム)</h2>
         </div>
         
 
         <div class="lower-keyvisual">
-            <img class="pc" src="<?= get_theme_file_uri(); ?>/img/nursing-keyvisual.png" alt="">
-            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/nursing-keyvisual-sp.png" alt="">
+            <img class="pc" src="<?= get_theme_file_uri(); ?>/img/living-keyvisual.png" alt="">
+            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/living-keyvisual-sp.png" alt="">
             <div class="text">
                 <p>
-                    <span>みんな</span>にとってのより<span>どころ</span>。
+                    自立的な<span>暮らし</span>を、<br>
+                    <span>安心</span>で支える。
                 </p>
             </div>
         </div>
 
-        <h3>デイサービスについて<img src="<?= get_theme_file_uri(); ?>/img/h2-icon03.png" alt=""></h3>
+        <h3>共同生活援助について<img src="<?= get_theme_file_uri(); ?>/img/h2-icon06.png" alt=""></h3>
 
         <div class="about-outer">
-            <p>高齢者や障碍者が施設に通い、日中の一定の時間を共に過ごすサービスです。日中の活動や社会的交流を促進し、利用者の身体的・精神的な機能の維持や向上を支援します。<br>
-体操やリハビリテーション、趣味の活動、食事の提供などが行われ、利用者が家庭や地域での生活をより豊かに楽しめるようにサポートされます。</p>
-        </div>
-        <div class="businesses-inner">
-            <dl>
-                <div>
-                    <dt>対象となる方</dt>
-                    <dd>65歳以上で要介護もしくは要支援の認定を受けた方</dd>
-                </div>
-                <div>
-                    <dt>ご利用料金</dt>
-                    <dd>厚生労働省の定めた単位によって決められた金額をご負担いただきます。</dd>
-                </div>
-                <div>
-                    <dt>定員</dt>
-                    <dd>10名</dd>
-                </div>
-            </dl>
+            <p>共同生活援助は障碍者グループホームのことで、障害福祉サービスのひとつです。施設には家事援助や日常生活での相談を受ける世話人、食事や入浴、トイレなどの介護支援を行う生活支援員などの職員がいて、日常生活上の援助や介護支援を受けながら共同生活を送れることができます。</p>
         </div>
       </section>
 
 
       <div class="businesses-images">
         <div class="inner">
-          <img src="<?= get_theme_file_uri(); ?>/img/nursing01.png" alt="">
-          <img src="<?= get_theme_file_uri(); ?>/img/nursing02.png" alt="">
-          <img src="<?= get_theme_file_uri(); ?>/img/nursing03.png" alt="">
+          <img src="<?= get_theme_file_uri(); ?>/img/living01.png" alt="">
+          <img src="<?= get_theme_file_uri(); ?>/img/living02.png" alt="">
+          <img src="<?= get_theme_file_uri(); ?>/img/living03.png" alt="">
 
         </div>
       </div>
 
       <section id="businesses-about">
-          <h4>共同生活介護について</h4>
+          <h4>ハサピについて</h4>
           <div class="about-outer">
-              <p>高齢者と障がい児・者が共に利用できる、新しく設けられたサービスで、介護保険と障害福祉のサービスを同じ場所で提供できるようになったものです。</p>
+              <p>女性棟であるハサピは定員5名のサービスです。掃除や入浴、食事や服薬など、入居者の方に必要となる支援を行いながら生活します。食事の時間や就寝時間などは決められておらず、自由で自立的な暮らしと安心を両立できることが、特色です。</p>
           </div>
-          <div class="businesses-inner">
-            <dl>
-                <div>
-                    <dt>対象となる方</dt>
-                    <dd>障害者区分認定を受けた方</dd>
-                </div>
-                <div>
-                    <dt>ご利用料金</dt>
-                    <dd>厚生労働省の定めた単位によって決められた金額をご負担いただきます。</dd>
-                </div>
-                <div>
-                    <dt>定員</dt>
-                    <dd>10名</dd>
-                </div>
-            </dl>
-         </div>
       </section>
 
 
-      <?php get_template_part("parts/contact"); ?>
 
       <div class="businesses-images">
         <div class="inner">
-          <img src="<?= get_theme_file_uri(); ?>/img/nursing04.png" alt="">
-          <img src="<?= get_theme_file_uri(); ?>/img/nursing05.png" alt="">
-          <img src="<?= get_theme_file_uri(); ?>/img/nursing06.png" alt="">
+          <img src="<?= get_theme_file_uri(); ?>/img/living04.png" alt="">
+          <img src="<?= get_theme_file_uri(); ?>/img/living05.png" alt="">
+          <img src="<?= get_theme_file_uri(); ?>/img/living06.png" alt="">
         </div>
       </div>
 
 
-      <section id="businesses-flow">
-        <div class="businesses-inner">
-          <h4>1日の流れ</h4>
-          <ul>
-            <li>
-              <time>9:00〜</time>
-              <span></span>
-              <div class="text">
-                <h5>送迎</h5>
-                <p>送迎車にてご自宅へお迎えにあがりますので、安心して通所いただけます。</p>
-              </div>
-            </li>
-            <li>
-              <time>10:00〜</time>
-              <span></span>
-              <div class="text">
-                <h5>到着、団らんタイム</h5>
-                <p>朝の団らんタイムでは、昼食のメニューの話をしたり、みんなで懐メロを歌ったりしながら過ごしています。</p>
-              </div>
-            </li>
-            <li>
-              <time>12:00〜</time>
-              <span></span>
-              <div class="text">
-                <h5>昼休憩（昼食）、入浴</h5>
-                <p>昼食は毎日手作りでご提供しています。入浴は順番に。１対１の個浴対応をしています。</p>
-              </div>
-            </li>
-            <li>
-              <time>13:00〜</time>
-              <span></span>
-              <div class="text">
-                <h5>レクリエーション</h5>
-                <p>トランプや将棋をしたり、テレビを観たりと、思い思いの時間を過ごします。<br>
-                歯医者による歯科検診や、訪問美容室も定期的に実施しています。</p>
-              </div>
-            </li>
-            <li>
-              <time>14:00〜</time>
-              <span></span>
-              <div class="text">
-                <h5>送迎開始</h5>
-                <p>帰宅したい時間に合わせ順次送迎をいたします。</p>
-              </div>
-            </li>
-            <li>
-              <time>16:00〜</time>
-              <span></span>
-              <div class="text">
-                <h5>閉所</h5>
-                <p>本日は終了。今日も１日お疲れさまでした。</p>
-              </div>
-            </li>
-          </ul>
+      <section id="businesses-about">
+          <h4>伽耶琴について</h4>
+          <div class="about-outer">
+              <p>男性棟である伽耶琴は定員7名の共同生活援助サービスです。就労継続支援等の日中活動を利用している方などに対して、地域において自立した日常生活を営む上で必要な食事等の支援をしています。</p>
+          </div>
+      </section>
+
+      <?php get_template_part("parts/contact"); ?>
+
+      <section id="q-and-a">
+        <h4>Q&A</h4>
+        <p>暮らしに関する、よくあるお悩みをお答えします！はじめての方でもご安心ください。</p>
+        <div class="q-and-a">
+          <h5>実際の暮らしについて、詳しいことを知りたい。どんな環境で住むの？</h5>
+          <dl>
+            <div>
+              <dt>
+                <img src="<?= get_theme_file_uri(); ?>/img/question-icon.png" alt="">
+                Q. <br>起床時間や就寝時間、<br>生活リズムも管理されるの？
+              </dt>
+              <dd>
+                A. 回答がここに入ります。
+                <img src="<?= get_theme_file_uri(); ?>/img/answer-icon.png" alt="" >
+              </dd>
+            </div>
+            <div>
+              <dt>
+                <img src="<?= get_theme_file_uri(); ?>/img/question-icon.png" alt="">
+                Q.<br> 食事の提供時間は何時から？
+              </dt>
+              <dd>
+                A. 回答がここに入ります。
+                <img src="<?= get_theme_file_uri(); ?>/img/answer-icon.png" alt="" >
+              </dd>
+            </div>
+            <div>
+              <dt>
+                <img src="<?= get_theme_file_uri(); ?>/img/question-icon.png" alt="">
+                Q. <br>入浴は自由にできるの？<br>時間制など決まってる？
+              </dt>
+              <dd>
+                A. 回答がここに入ります。
+                <img src="<?= get_theme_file_uri(); ?>/img/answer-icon.png" alt="" >
+              </dd>
+            </div>
+          </dl>
+        </div>        
+        <div class="q-and-a">
+          <h5>自由時間のイメージについてや、その他、細かいルールを知りたい。</h5>
+          <dl>
+            <div>
+              <dt>
+                <img src="<?= get_theme_file_uri(); ?>/img/question-icon.png" alt="">
+                Q.<br> 外出の制限はあるの？<br>門限なども決まってる？
+              </dt>
+              <dd>
+                A. 回答がここに入ります。
+                <img src="<?= get_theme_file_uri(); ?>/img/answer-icon.png" alt="" >
+              </dd>
+            </div>
+            <div>
+              <dt>
+                <img src="<?= get_theme_file_uri(); ?>/img/question-icon.png" alt="">
+                Q.<br> サービス利用者同士の交流の機会はあるの？
+              </dt>
+              <dd>
+                A. 回答がここに入ります。
+                <img src="<?= get_theme_file_uri(); ?>/img/answer-icon.png" alt="" >
+              </dd>
+            </div>
+          </dl>
         </div>
-      </section>      
+      </section>
 
       <section id="using">
         <div class="businesses-inner">

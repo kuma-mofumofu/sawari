@@ -20,12 +20,10 @@
               <li><a href="/privacy/">個人情報保護方針</a></li>
             </ul>
             <div class="businesses">
-              <h3>事業内容</h3>
               <ul>
-                <li><a href="/welfare01/">就労継続支援B型</a></li>
-                <li><a href="/welfare02/">共同生活援助</a></li>
-                <li><a href="/welfare03/">デイサービス<br>
-                  └共生型生活介護</a></li>
+                <li><a href="/welfare01/">デイサービス/共生型生活介護</a></li>
+                <li><a href="/welfare02/">就労継続支援B型</a></li>
+                <li><a href="/welfare03/">共同生活援助(グループホーム)</a></li>
                 <li><a href="/welfare04/">特定相談支援</a></li>
               </ul>
             </div>

@@ -418,7 +418,7 @@
   position: absolute;
   content: "";
   height: calc(100% - 24px);
-  border-left: 1px solid #3B4043;
+  border-left: 1px solid #5AB8CD;
   left: 16px;
 }
 .coder1 #page-company #company-staffs .white-inner .organization ul li .text {
@@ -440,25 +440,27 @@
   width: calc(100% - 32px - 36px);
   margin-left: auto;
 }
-.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board) > :first-child {
+.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board):not(.day-service) > :first-child {
   position: relative;
 }
-.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board) > :first-child::before {
+.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board):not(.day-service) > :first-child::before {
   position: absolute;
   content: "";
   width: 18px;
-  border-bottom: 1px solid #3B4043;
+  border-bottom: 1px solid #5AB8CD;
   top: 24px;
   left: -19px;
 }
-.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board) > :nth-child(2) {
+.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board) > :nth-child(2),
+.coder1 #page-company #company-staffs .white-inner .organization ul .day-service .text {
   position: relative;
 }
-.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board) > :nth-child(2)::before {
+.coder1 #page-company #company-staffs .white-inner .organization ul li:not(.board) > :nth-child(2)::before,
+.coder1 #page-company #company-staffs .white-inner .organization ul .day-service .text::before {
   position: absolute;
   content: "";
   height: 24px;
-  border-left: 1px solid #3B4043;
+  border-left: 1px solid #5AB8CD;
   top: -25px;
   left: 24px;
 }
@@ -484,7 +486,7 @@
   content: "";
   position: absolute;
   width: 24px;
-  border-bottom: 1px solid #3B4043;
+  border-bottom: 1px solid #5AB8CD;
   right: -25px;
   top: 42px;
 }
@@ -1476,7 +1478,7 @@
 }
 .coder1 footer .footer-main .text nav {
   display: flex;
-  width: 460px;
+  width: 490px;
   justify-content: space-between;
 }
 .coder1 footer .footer-main .text nav ul li {
@@ -1489,14 +1491,6 @@
 }
 .coder1 footer .footer-main .text nav > ul li a:hover {
   color: #5AB8CD;
-}
-.coder1 footer .footer-main .text nav .businesses h3 {
-  color: #000;
-  font-family: sans-serif;
-  font-weight: normal;
-  margin-bottom: 5px;
-  font-size: 14px;
-  text-align: left;
 }
 .coder1 footer .footer-main .text nav .businesses ul li a {
   color: #3B4043;
