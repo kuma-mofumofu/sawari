@@ -5,13 +5,13 @@
         <div class="inner">
           <a href="/">ホーム</a>
           <span>&gt;</span>
-          <span>デイサービス/共同生活介護</span>
+          <span>デイサービス/共生型生活介護</span>
         </div>
       </div>
 
       <section id="nursing-top" >
         <div class="outer">
-          <h2 class="lower-h2">デイサービス/共同生活介護</h2>
+          <h2 class="lower-h2">デイサービス/共生型生活介護</h2>
         </div>
         
 

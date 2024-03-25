@@ -1201,9 +1201,9 @@
 
 .coder1 header {
   position: fixed;
-  padding: 0 20px;
+  padding: 0 24px;
   height: 135px;
-  width: calc(100% - 40px);
+  width: calc(100% - 48px);
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.7);
@@ -1453,7 +1453,7 @@
 }
 .coder1 footer .footer-main {
   background: #E6EFF4;
-  padding: 114px 12px;
+  padding: 114px 24px;
 }
 .coder1 footer .footer-main .text {
   display: flex;
