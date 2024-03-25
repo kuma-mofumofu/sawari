@@ -99,6 +99,93 @@
                 }
               }
             }
+            .organization{
+              ul{
+                padding-top: 24px;
+                position: relative;
+                max-width: 760px;
+                margin: 0 auto;
+                &::before{
+                  position: absolute;
+                  content: "";
+                  height: calc(100% - 24px);
+                  border-left: 1px solid $font;
+                  left: 16px;
+                }
+                li{
+                  .text{
+                    border: 1px solid $tag-font;
+                    padding: 16px;
+                    border-radius: 12px;
+                    line-height: 24px;
+                    background: #fff;
+                    margin-bottom: 24px;
+                    
+                    h4{
+                      font-size: 20px;
+                      margin-bottom: 12px;
+                      br{
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                li:not(.board){
+                  .text{
+                    width: calc(100% - 32px - 36px);
+                    margin-left: auto;
+                  }
+                  & > :first-child{
+                    position: relative;
+                    &::before{
+                      position: absolute;
+                      content: "";
+                      width: 18px;
+                      border-bottom: 1px solid $font;
+                      top: 24px;
+                      left: -19px;
+                    }
+                  }
+                  & > :nth-child(2){
+                    position: relative;
+                    &::before{
+                      position: absolute;
+                      content: "";
+                      height: 24px;
+                      border-left: 1px solid $font;
+                      top: -25px;
+                      left: 24px;
+                    }
+                  }
+                }
+                li:last-child{
+                  position: relative;
+                  &::before{
+                    position: absolute;
+                    content: "";
+                    top: 25px;
+                    left: 16px;
+                    height: 100%;
+                    border-left: 1px solid #fff;
+                  }
+                }
+                .board{
+                  display: flex;
+                  gap: 24px;
+                  & > :first-child{
+                    position: relative;
+                    &::after{
+                      content: "";
+                      position: absolute;
+                      width: 24px;
+                      border-bottom: 1px solid $font;
+                      right: -25px;
+                      top: 42px;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
         .continuation{
@@ -130,6 +217,7 @@
                 }
             }
             #company-staffs{
+              .white-inner{
                 .chairman-message{
                 text-align: center;
                 h3{
@@ -142,6 +230,20 @@
                     }
                 }
                 }
+                .organization{
+                  ul{
+                    li{
+                      .text{
+                        h4{
+                          br{
+                            display: block;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
 
         }
