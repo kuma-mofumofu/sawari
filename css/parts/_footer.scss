@@ -42,7 +42,7 @@
             }
             nav{
               display: flex;
-              width: 490px;
+              width: 480px;
               justify-content: space-between;
               ul{
                 li{
@@ -64,6 +64,7 @@
               .businesses{
                 ul{
                   li{
+                    font-size: 12px;
                     a{
                       color: $font;
                       &:hover{

@@ -1293,7 +1293,7 @@
 }
 .coder1 header .inner nav ul .businesses dl a dt {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
   position: relative;
 }
 .coder1 header .inner nav ul .businesses dl a dt span {
@@ -1478,7 +1478,7 @@
 }
 .coder1 footer .footer-main .text nav {
   display: flex;
-  width: 490px;
+  width: 480px;
   justify-content: space-between;
 }
 .coder1 footer .footer-main .text nav ul li {
@@ -1491,6 +1491,9 @@
 }
 .coder1 footer .footer-main .text nav > ul li a:hover {
   color: #5AB8CD;
+}
+.coder1 footer .footer-main .text nav .businesses ul li {
+  font-size: 12px;
 }
 .coder1 footer .footer-main .text nav .businesses ul li a {
   color: #3B4043;
