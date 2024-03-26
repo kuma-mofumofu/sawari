@@ -34,6 +34,7 @@
 
  @media(max-width:660px){
      .news--list--item{
+        &:last-child{margin-bottom: 84px;}
          .text_block{
              padding-left: 0;
          }
