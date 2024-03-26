@@ -874,6 +874,9 @@
   margin-bottom: 1rem;
 }
 @media (max-width: 660px) {
+  #archive .news--list--item:last-child {
+    margin-bottom: 84px;
+  }
   #archive .news--list--item .text_block {
     padding-left: 0;
   }
@@ -1836,6 +1839,9 @@
   }
   .coder1 .ecclesia--list .style {
     display: none;
+  }
+  .coder1 .pagination {
+    margin-bottom: 100px;
   }
 }
 
