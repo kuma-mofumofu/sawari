@@ -57,7 +57,9 @@
                 <time class="time">
                   <?php echo get_the_date('Y年度 m月発行'); ?>
                 </time>
+                <?php if($counter == 0): ?>
                   <span class="new_icon">NEW</span>
+                <?php endif; ?>
                 
               </div>
               <div class="lower">
@@ -71,10 +73,14 @@
         </li>
 
         <?php
+              $counter++;
             endwhile;
           endif;
         ?>
 
+        <li class="style"></li>
+        <li class="style"></li>
+        <li class="style"></li>
 
       </ul><!-- /.ecclesia--list -->
 
@@ -88,9 +94,6 @@
 
     </div><!-- /.ecclesia -->
 
-    <div>
-      <a href="#">△</a>
-    </div>
 
   </main>
 <?php get_footer(); ?>
