@@ -47,21 +47,21 @@
               <a href="/welfare01/">事業内容</a>
               <dl>
                 <a href="/welfare01/">
-                  <dt>就労継続支援B型</dt>
-                  <dd>グレースハウス／ポケット</dd>
-                </a>
-                <a href="/welfare02/"> 
-                  <dt>共同生活援助</dt>
-                  <dd>ハサピ＆伽耶琴</dd>
-                </a>
-                <a href="/welfare03/">
-                  <dt>
-                    デイサービス<br>
-                    <span>└</span>共生型生活介護
-                  </dt>
+                  <dt>デイサービス/共生型生活介護</dt>
                   <dd>ピパ</dd>
                 </a>
-                <a href="/welfare04/"><dt>特定相談支援</dt></a>
+                <a href="/welfare02/"> 
+                  <dt>就労継続支援B型</dt>
+                  <dd>グレースハウス/ポケット</dd>
+                </a>
+                <a href="/welfare03/">
+                  <dt>共同生活援助(グループホーム)</dt>
+                  <dd>ハサピ/伽耶琴</dd>
+                </a>
+                <a href="/welfare04/">
+                  <dt>特定相談支援</dt>
+                  <dd>グレース</dd>
+                </a>
               </dl>
             </li>
             <li><a href="/contact/">お問い合わせ</a></li>

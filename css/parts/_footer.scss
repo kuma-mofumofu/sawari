@@ -42,7 +42,7 @@
             }
             nav{
               display: flex;
-              width: 460px;
+              width: 480px;
               justify-content: space-between;
               ul{
                 li{
@@ -62,16 +62,9 @@
                 }
               }
               .businesses{
-                h3{
-                  color: #000;
-                  font-family: sans-serif;
-                  font-weight: normal;
-                  margin-bottom: 5px;
-                  font-size: 14px;
-                  text-align: left;
-                }
                 ul{
                   li{
+                    font-size: 12px;
                     a{
                       color: $font;
                       &:hover{

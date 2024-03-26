@@ -312,6 +312,34 @@
       }
     }
 
+    .pagination{
+      justify-content: center;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 154px;
+      a,
+      span{
+        display: block;
+        border: 1px solid $tag-font;
+        color: $tag-font !important;
+        font-size: 20px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        transition: background .3s;
+      }
+      .current{
+        background: $tag-font;
+        color: #fff !important;
+      }
+      a:hover{
+        background: $tag-bg;
+      }
+    }
+
 
 
   
