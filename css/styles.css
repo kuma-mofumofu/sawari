@@ -631,12 +631,12 @@
   }
 }
 
-.coder1 #page-journal .ecclesia {
+.coder1 #archive-journal .ecclesia {
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1028px;
 }
-.coder1 #page-journal .ecclesia .continuation {
+.coder1 #archive-journal .ecclesia .continuation {
   margin-bottom: 84px;
 }
 
@@ -873,48 +873,6 @@
   text-align: left;
   margin-bottom: 1rem;
 }
-#archive .wp-pagenavi {
-  text-align: center;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
-#archive .wp-pagenavi a {
-  color: #5AB8CD;
-}
-#archive .wp-pagenavi a.first,
-#archive .wp-pagenavi a.last {
-  display: none;
-}
-#archive .wp-pagenavi .pages {
-  display: none;
-}
-#archive .wp-pagenavi .current,
-#archive .wp-pagenavi .larger,
-#archive .nextpostslink,
-#archive .wp-pagenavi .smaller,
-#archive .previouspostslink {
-  font-size: 20px;
-  margin-right: 10px;
-  border: 1px solid #5AB8CD;
-  border-radius: 10px;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s;
-}
-#archive .wp-pagenavi .current {
-  background: #5AB8CD;
-  color: #fff;
-}
-#archive .wp-pagenavi .larger:hover,
-#archive .nextpostslink:hover,
-#archive .wp-pagenavi .smaller:hover,
-#archive .previouspostslink:hover {
-  background: #E6EFF4;
-}
 @media (max-width: 660px) {
   #archive .news--list--item .text_block {
     padding-left: 0;
@@ -925,9 +883,6 @@
   }
   #archive .news--list--item a .image_block {
     text-align: center;
-  }
-  #archive .continuations {
-    display: none;
   }
 }
 
@@ -1176,12 +1131,12 @@
   text-decoration: underline;
 }
 
-.coder1 #page-journal .ecclesia {
+.coder1 #archive-journal .ecclesia {
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1028px;
 }
-.coder1 #page-journal .ecclesia .continuation {
+.coder1 #archive-journal .ecclesia .continuation {
   margin-bottom: 84px;
 }
 
@@ -1810,6 +1765,33 @@
 .coder1 .pdf a .text p {
   padding-top: 24px;
   line-height: 24px;
+}
+.coder1 .pagination {
+  justify-content: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 154px;
+}
+.coder1 .pagination a,
+.coder1 .pagination span {
+  display: block;
+  border: 1px solid #5AB8CD;
+  color: #5AB8CD !important;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+.coder1 .pagination .current {
+  background: #5AB8CD;
+  color: #fff !important;
+}
+.coder1 .pagination a:hover {
+  background: #E6EFF4;
 }
 @media (max-width: 800px) {
   .coder1 {

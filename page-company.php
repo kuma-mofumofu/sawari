@@ -44,7 +44,7 @@
             </div>
             <div>
               <dt>役員数</dt>
-              <dd>◯名</dd>
+              <dd>理事　　2名<br>監事　　3名<br>評議員　7名</dd>
             </div>
             <div class="services">
               <dt>提供サービス</dt>
