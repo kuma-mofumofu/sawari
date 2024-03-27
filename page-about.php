@@ -112,7 +112,7 @@
         <section id="journal">
           <h3>機関紙「エクレーシア」</h3>
           <p>社会福祉法人サワリでは、年2回機関紙を発刊しています。施設利用者の絵や小説、利用者インタビューや理事長の言葉など、サワリの活動や現状を知っていただくことができる定期刊行物です。</p>
-          <a href="/journal/" class="continuation">詳細を見る</a>
+          <a href="<?php home_url()?>/ecclesia/" class="continuation">詳細を見る</a>
         </section>
       </div>
     </main>
