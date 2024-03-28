@@ -17,7 +17,7 @@
 
         <div class="lower-keyvisual">
             <img class="pc" src="<?= get_theme_file_uri(); ?>/img/living-keyvisual.png" alt="">
-            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/living-keyvisual-sp.png" alt="">
+            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/living-keyvisual-sp.jpg" alt="">
             <div class="text">
                 <p>
                     自立的な<span>暮らし</span>を、<br>

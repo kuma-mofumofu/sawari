@@ -16,7 +16,7 @@
 
         <div class="lower-keyvisual">
             <img class="pc" src="<?= get_theme_file_uri(); ?>/img/employment-keyvisual.png" alt="">
-            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/employment-keyvisual-sp.png" alt="">
+            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/employment-keyvisual-sp.jpg" alt="">
             <div class="text">
                 <p>
                     人とくらべない、人のことを気にしない<br>

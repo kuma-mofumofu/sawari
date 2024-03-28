@@ -171,7 +171,7 @@
 }
 @media (max-width: 660px) {
   .coder1 #front-page #keyvisual {
-    height: calc(100dvh - 100px);
+    height: calc(100svh - 100px);
     background-color: #E6EFF4;
     margin: 0 auto;
     box-sizing: border-box;
@@ -1816,7 +1816,7 @@
     display: none;
   }
   .coder1 .lower-keyvisual {
-    height: calc(100dvh - 176px);
+    height: calc(100svh - 176px);
     overflow: hidden;
   }
   .coder1 .lower-keyvisual .text {

@@ -17,7 +17,7 @@
 
         <div class="lower-keyvisual">
             <img class="pc" src="<?= get_theme_file_uri(); ?>/img/consultation-keyvisual.png" alt="">
-            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/consultation-keyvisual-sp.png" alt="">
+            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/consultation-keyvisual-sp.jpg" alt="">
             <div class="text">
                 <p>
                     自分らしく<span>暮</span>らす

@@ -17,7 +17,7 @@
 
         <div class="lower-keyvisual">
             <img class="pc" src="<?= get_theme_file_uri(); ?>/img/nursing-keyvisual.png" alt="">
-            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/nursing-keyvisual-sp.png" alt="">
+            <img class="sp" src="<?= get_theme_file_uri(); ?>/img/nursing-keyvisual-sp.jpg" alt="">
             <div class="text">
                 <p>
                     <span>みんな</span>にとってのより<span>どころ</span>。
