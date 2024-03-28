@@ -8,25 +8,25 @@
           <div class="business-items">
             <a href="/welfare01/">
               <div class="business-img">
-                <img src="<?= get_theme_file_uri(); ?>/img/business2.png" alt="">
+                <img src="<?= get_theme_file_uri(); ?>/img/nursing-keyvisual-sp.jpg" alt="">
               </div>
               <h3>共生型生活介護/デイサービス</h3>
             </a>
             <a href="/welfare02/">
               <div class="business-img">
-                <img src="<?= get_theme_file_uri(); ?>/img/business1.png" alt="">
+                <img src="<?= get_theme_file_uri(); ?>/img/employment-keyvisual-sp.jpg" alt="">
               </div>
               <h3>就労継続支援B型</h3>
             </a>
             <a href="/welfare03/">
               <div class="business-img">
-                <img src="<?= get_theme_file_uri(); ?>/img/business3.png" alt="">
+                <img src="<?= get_theme_file_uri(); ?>/img/living-keyvisual-sp.jpg" alt="">
               </div>
               <h3>共同生活援助(グループホーム)</h3>
             </a>
             <a href="/welfare04/">
               <div class="business-img">
-                <img src="<?= get_theme_file_uri(); ?>/img/business4.png" alt="">
+                <img src="<?= get_theme_file_uri(); ?>/img/consultation-keyvisual-sp.jpg" alt="">
               </div>
               <h3>特定相談支援</h3>
             </a>

@@ -22,6 +22,7 @@
               margin-bottom: 16px;
               overflow: hidden;
               border-radius: calc(100% * 20 / 329 ) / calc(100% * 20 / 188);
+              aspect-ratio: 329 / 188;
               img{
                 width: 100%;
                 transition: transform .3s;
